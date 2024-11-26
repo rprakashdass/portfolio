@@ -18,7 +18,7 @@ const Hero = () => {
       </div>
 
       {/* Gradient Mask */}
-      
+
       <div
         className="h-screen w-full dark:bg-black bg-white dark:bg-grid-white/[0.03] bg-grid-black-100/[0.2]
        absolute top-0 left-0 flex items-center justify-center"
@@ -36,7 +36,7 @@ const Hero = () => {
           />
 
           <p className="mt-4 text-center text-sm tracking-wider md:text-lg lg:text-2xl">
-            I&apos;m Prakash Dass R, a student creating user-centric products.
+            Hi, I&apos;m Prakash Dass R, a student passionate about creating user-centric, impactful solutions through innovative technologies
           </p>
 
           <a href="#projects" className="mt-6">
