@@ -20,12 +20,13 @@ const Skills: React.FC = () => {
 
   return (
     <section id="skills" className="skills px-5 py-10 lg:mx-35">
+      <h1 className='heading mb-16'>My Skills</h1>
       <div className="skills-container mx-auto max-w-6xl">
         {Object.entries(skills).map(([category, skillsList], index) => (
           <div key={index} className="category-section mb-12">
             <div className="flex items-center mb-6">
               <div className="flex-grow border-t border-gray-400" />
-              <h6 className="text-white mx-4 font-semibold">{category}</h6>
+              <h1 className="mx-4 font-semibold text-xl text-[#aa5397]">{category}</h1>
               <div className="flex-grow border-t border-gray-400" />
             </div>
 
@@ -38,12 +39,13 @@ const Skills: React.FC = () => {
               {skillsList.map((skill, skillIndex) => (
                 <motion.div
                   key={skillIndex}
-                  className="skill-card flex items-center justify-between p-5 text-white bg-gray-800 border border-gray-600 rounded-lg shadow-lg hover:bg-gray-700 transition-transform duration-300 relative"
+                  className="skill-card flex items-center justify-between p-5 text-white bg-[#121213]  border border-x-gray-600 rounded-lg shadow-lg hover:bg-gray-700 transition-shadow duration-300 relative"
                   variants={itemVariants}
                   whileHover={{ 
-                    scale: 1.05, // Slightly scale on hover
-                    rotate: 5,   // Apply slight rotation for shake effect
-                    transition: { type: "spring", stiffness: 300, damping: 20 } // Smooth animation
+                    scale: 1.2,
+                    rotate: 0,
+                    zIndex: 10,
+                    transition: { type: "keyframes" }
                   }}
                 >
                   {/* Skill name aligned to the left */}
@@ -52,7 +54,7 @@ const Skills: React.FC = () => {
                   </div>
 
                   {/* Logo aligned to the extreme right using absolute positioning */}
-                  <div className="skill-logo absolute right-0 w-12 h-12 bg-gray-500 rounded-full flex items-center justify-center mr-10">
+                  <div className="skill-logo absolute right-0 w-12 h-12 bg-grounded-full flex items-center justify-center mr-10">
                     {skill.logo ? (
                       <img
                         src={skill.logo}
@@ -60,7 +62,7 @@ const Skills: React.FC = () => {
                         className="w-12 h-12 object-cover"
                       />
                     ) : (
-                      <span className="text-sm text-white">No Logo</span>
+                      <span className="text-sm text-white">Logo</span>
                     )}
                   </div>
                 </motion.div>

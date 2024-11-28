@@ -4,6 +4,8 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 First, run the development server:
 
+The logos: https://www.svgrepo.com
+
 ```bash
 npm run dev
 # or

@@ -75,6 +75,9 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        highlight: {
+          DEFAULT: "#ad2490"
+        }
       },
       borderRadius: {
         lg: "var(--radius)",

@@ -20,30 +20,26 @@ export const skills: Skills = {
     { name: 'C', logo: '/logos/c.svg' },
     { name: 'C++', logo: '/logos/cpp.svg' },
     { name: 'Python', logo: '/logos/python.png' },
-    { name: 'JavaScript', logo: '/logos/java.png' },
   ],
   'Web Development': [
     { name: 'HTML', logo: '/logos/html.svg' },
     { name: 'CSS', logo: '/logos/css.svg' },
     { name: 'Bootstrap', logo: '/logos/bootstrap.svg' },
-    { name: 'JavaScript', logo: '/logos/js.png' },
+    { name: 'JavaScript', logo: '/logos/js.svg' },
   ],
   'Libraries & Frameworks': [
     { name: 'React', logo: '/logos/react.svg' },
     { name: 'Node.js', logo: '/logos/node.png' },
     { name: 'Express.js', logo: '/logos/express.png' },
-    { name: 'Flask', logo: '/logos/flask-100.svg' },
+    { name: 'Flask', logo: '/logos/flask.svg' },
     { name: 'Django', logo: '/logos/django.svg' },
-    { name: 'Tensorflow', logo: '' },
+    { name: 'Tensorflow', logo: '/logos/tf.svg' },
   ],
-  'Databases': [
-    { name: 'MongoDB', logo: '' },
-    { name: 'MySQL', logo: '' },
-    { name: 'SQLite', logo: '' },
-  ],
-  'Tools': [
-    { name: 'Git', logo: '' },
-    { name: 'Figma', logo: '' },
+  'Databases & Tools': [
+    { name: 'MongoDB', logo: '/logos/mongodb.svg' },
+    { name: 'MySQL', logo: '/logos/mysql.svg' },
+    { name: 'Git', logo: '/logos/git.svg' },
+    { name: 'Figma', logo: '/logos/figma.svg' },
   ],
 };
 
@@ -59,14 +55,6 @@ export const skills: Skills = {
     },
     {
       id: 2,
-      title: "CMS - Client Management for administrations",
-      des: "Stay organized and build stronger relationships with our Client Management System! 📋🤝 Manage contacts, track interactions, and boost efficiency—all in one user-friendly platform. Simplify your workflow and focus on what matters most: your clients.",
-      img: "/p2.svg",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-      link: "http://cms-phpapp.kesug.com/",
-    },
-    {
-      id: 3,
       title: "Real Time Face Recognition - Flask App",
       des: "Unlock fast, secure, and accurate identification with real-time face recognition! 🔍✨",
       img: "/p3.svg",
@@ -74,15 +62,15 @@ export const skills: Skills = {
       link: "https://github.com/rprakashdass/realtime-face-recognition",
     },
     {
-      id: 4,
+      id: 3,
       title: "RedConnect - Blood Donation Management",
       des: "Save lives effortlessly with RedConnect! ❤️🩸 Connect donors and recipients in real-time, making blood donation faster and easier.",
       img: "/bds.png",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-      link: "https://redconnect.vercel.app/",
+      link: "https://redconnect.rprakashdass.in/",
     },
     {
-        id: 5,
+        id: 4,
         title: "Public Transport Tracker - A console Based Application",
         des: "Navigate your commute with ease using the Public Transport Tracker! 🚍⏱️ A console-based application for real-time tracking and smarter travel planning.",
         img: "/public_bus_tracking.png",
