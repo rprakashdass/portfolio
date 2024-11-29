@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { ThemeProvider } from "./provider";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 // Importing custom fonts
 const geistSans = localFont({
@@ -31,6 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
       <body>
+        <SpeedInsights/>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
