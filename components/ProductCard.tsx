@@ -53,12 +53,14 @@ export const ProductCard = () => {
               </p>
 
               <div className="flex justify-center items-center border-t-2">
-                  {/* <a href="#contact" className="lg:text-xl md:text-xs text-sm text-purple">
+                  {/* <p onClick={ () => {
+                      window.location.href = "#contact"
+                  }} className="lg:text-xl md:text-xs text-sm text-purple">
                     Reach Out to me
-                  </a> */}
-                  <a href="https://github.com/rprakashdass/portfolio-project" className="lg:text-xl md:text-xs text-sm text-purple mt-3">
+                  </p> */}
+                  <p className="mt-5">
                     View Demo
-                  </a>
+                  </p>
                   <FaLocationArrow className="ms-3" color="#CBACF9" />
                 </div>
             </PinContainer>
