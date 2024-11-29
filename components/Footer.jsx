@@ -21,7 +21,7 @@ const Footer = () => {
 
             <div id="#contact" className="flex flex-col items-center">
                 <h1 className="heading lg:max-w-[45vw] sm:mb-6 mb-4">
-                    Looking to <span className="text-purple">collaborate</span> on exciting projects?
+                    Looking to <span className="text-highlight">collaborate</span> on exciting projects?
                 </h1>
                 <p className="text-white-200 md:mt-8 mt-4 mb-6 text-center sm:line-clamp-2">
                     If you're ready to elevate your digital presence or need help with your next project, let's connect and create something amazing together.
@@ -37,7 +37,7 @@ const Footer = () => {
 
 
             <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
-                <p className="md:text-base m-5 text-sm md:font-normal font-light">
+                <p className="md:text-base m-5 mb-2 text-sm md:font-normal font-light">
                     Copyright © 2024 Prakash Dass R
                 </p>
             </div>

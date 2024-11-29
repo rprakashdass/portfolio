@@ -27,11 +27,15 @@ const config = {
     },
     extend: {
       colors: {
-        black: {
-          DEFAULT: "#000",
-          100: "#000319",
-          200: "rgba(17, 25, 40, 0.75)",
-          300: "rgba(255, 255, 255, 0.125)",
+        // black: {
+        //   DEFAULT: "#000",
+        //   100: "#000319",
+        //   200: "rgba(17, 25, 40, 0.75)",
+        //   300: "rgba(255, 255, 255, 0.125)",
+        // },
+        highlight: {
+            // DEFAULT: "#ad2490",
+            DEFAULT: "#ee6cfa",
         },
         white: {
           DEFAULT: "#FFF",
@@ -75,9 +79,6 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        highlight: {
-          DEFAULT: "#ad2490"
-        }
       },
       borderRadius: {
         lg: "var(--radius)",

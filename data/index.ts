@@ -43,6 +43,19 @@ export const skills: Skills = {
   ],
 };
 
+
+export const products = [
+  {
+    id: 1,
+    title: "Portfolio Application - Developed with React.js and Bootstrap",
+    des: "Explore the limited functionality website and get in touch for the complete product.",
+    img: "/portfolio-project.png",
+    iconLists: ["/logo/boostrap.svg", "/logo/javascript.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+    link: "https://portfolio.project.rprakashdass.in",
+  },
+];
+
+
   
   export const projects = [
     {
@@ -51,7 +64,7 @@ export const skills: Skills = {
       des: "Discover, share, and master delicious recipes with our vibrant cooking community! 🥘✨ From beginner tips to gourmet tricks, we've got something for every foodie. Join now and turn your kitchen into a culinary adventure! 👩‍🍳👨‍🍳",
       img: "/toppings.png",
       iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-      link: "https://toppings.rprakashdass.in",
+      link: "https://toppings.project.rprakashdass.in",
     },
     {
       id: 2,

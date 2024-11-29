@@ -39,9 +39,9 @@ const Hero = () => {
             Hi, I&apos;m Prakash Dass R, a student passionate about creating user-centric, impactful solutions through innovative technologies
           </p>
 
-          <a href="#projects" className="mt-6">
+          <a href="https://github.com/rprakashdass" className="mt-6">
             <MagicButton
-              title="Explore My Projects"
+              title="Vist My GitHub"
               icon={<RiExternalLinkLine />}
               position="right"
             />

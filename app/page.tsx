@@ -6,6 +6,7 @@ import Footer from "@/components/Footer"
 import Skills from "@/components/SkillsShowcase";
 import LinkTree from "@/components/LinkTree";
 import Head from 'next/head';
+import { ProductCard } from "@/components/ProductCard";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <Hero />
         <FloatingNav navItems={navItems} />
         <Skills />
+        <ProductCard/>
         <RecentProjects />
         <LinkTree />
         <Footer />

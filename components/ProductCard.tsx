@@ -1,19 +1,21 @@
 "use client";
 
 import { FaLocationArrow } from "react-icons/fa6";
-
-import { projects } from "@/data";
+import { products } from "@/data";
 import { PinContainer } from "./ui/PinContainer";
 
-export const RecentProjects = () => {
+export const ProductCard = () => {
   return (
     <div id="projects" className="py-20 px-20">
       <h1 className="heading">
-        Some of{" "}
-        <span className="text-highlight">My projects</span>
+          My {' '}
+        <span className="text-highlight"> 
+          Freelance {' '}
+        </span>Products
       </h1>
+
       <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
-        {projects.map((item) => (
+        {products.map((item, index) => (
           <div
             className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
             key={item.id}
@@ -50,28 +52,15 @@ export const RecentProjects = () => {
                 {item.des}
               </p>
 
-              <div className="flex items-center justify-between mt-7 mb-3">
-                <div className="flex items-center">
-                  {/* {item.iconLists.map((icon, index) => (
-                    <div
-                      key={index}
-                      className="border border-white/[.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
-                      style={{
-                        transform: `translateX(-${5 * index + 2}px)`,
-                      }}
-                    >
-                      <img src={icon} alt="icon5" className="p-2" />
-                    </div>
-                //  */}
-                </div> 
-
-                <div className="flex justify-center items-center">
-                  <p className="flex lg:text-xl md:text-xs text-sm text-purple">
-                    Click here
-                  </p>
+              <div className="flex justify-center items-center border-t-2">
+                  {/* <a href="#contact" className="lg:text-xl md:text-xs text-sm text-purple">
+                    Reach Out to me
+                  </a> */}
+                  <a href="https://github.com/rprakashdass/portfolio-project" className="lg:text-xl md:text-xs text-sm text-purple mt-3">
+                    View Demo
+                  </a>
                   <FaLocationArrow className="ms-3" color="#CBACF9" />
                 </div>
-              </div>
             </PinContainer>
           </div>
         ))}
