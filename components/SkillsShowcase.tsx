@@ -20,7 +20,7 @@ const Skills: React.FC = () => {
 
   return (
     <section id="skills" className="skills px-5 py-10 lg:mx-35">
-      <h1 className='heading mb-16'>My Skills</h1>
+      <h1 className='heading mb-16 z-10'>My Skills</h1>
       <div className="skills-container mx-auto max-w-6xl">
         {Object.entries(skills).map(([category, skillsList], index) => (
           <div key={index} className="category-section mb-12">
