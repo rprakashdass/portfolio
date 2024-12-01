@@ -36,7 +36,7 @@ const Hero = () => {
           />
 
           <p className="mt-4 text-center text-sm tracking-wider md:text-lg lg:text-2xl">
-            Hi, I&apos;m Prakash Dass R, a student passionate about creating user-centric, impactful solutions through innovative technologies
+            Hi, I&apos;m Prakash Dass R, a student passionate about creating user-centric products
           </p>
 
           <a href="https://github.com/rprakashdass" className="">

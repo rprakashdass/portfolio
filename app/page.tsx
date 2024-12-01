@@ -7,6 +7,7 @@ import Skills from "@/components/SkillsShowcase";
 import LinkTree from "@/components/LinkTree";
 import { ProductCard } from "@/components/ProductCard";
 import ResumeSection from "@/components/ResumeSection";
+// import { About } from "@/components/About";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <div className="max-w-7xl w-full"> 
         <Hero />
         <FloatingNav navItems={navItems} />
+        {/* <About/> */}
         <Skills />
         <ProductCard/>
         <RecentProjects />
