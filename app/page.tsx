@@ -6,6 +6,7 @@ import Footer from "@/components/Footer"
 import Skills from "@/components/SkillsShowcase";
 import LinkTree from "@/components/LinkTree";
 import { ProductCard } from "@/components/ProductCard";
+import ResumeSection from "@/components/ResumeSection";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <Skills />
         <ProductCard/>
         <RecentProjects />
+        <ResumeSection/>
         <LinkTree />
         <Footer />
       </div>

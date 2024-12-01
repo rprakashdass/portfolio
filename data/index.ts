@@ -1,5 +1,5 @@
 export const navItems = [
-    { name: "About", link: "#hero" },
+    { name: "Products", link: "#products" },
     { name: "Projects", link: "#projects" },
     { name: "Social Media", link: "#social-media" },
     { name: "Contact", link: "#contact" },
@@ -46,12 +46,20 @@ export const skills: Skills = {
 
 export const products = [
   {
-    id: 1,
-    title: "Portfolio Application - Developed with React.js and Bootstrap",
-    des: "Explore the limited functionality website and get in touch for the complete product.",
-    img: "/portfolio-project.png",
-    iconLists: ["/logo/boostrap.svg", "/logo/javascript.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "https://portfolio.project.rprakashdass.in",
+    id: 2,
+    title: "Client Management System",
+    des:"Developed using PHP: This application enables automated task assignment and follow-ups with minimal human intervention",
+    img: "/products/cms.png",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+    link: "http://cms-phpapp.kesug.com/",
+  },
+  {
+    id: 3,
+    title: "Payment Integration at Website",
+    des: "Implemented the Razorpay Payment Gateway integration at http://srishakthimangofarm.in/ Contributed to the backend support team by assisting in the integration process, ensuring secure payment transactions, and troubleshooting any issues that arose during implementation.",
+    img: "/products/payment-gateway-integration.jpg",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+    link: "http://srishakthimangofarm.in/",
   },
 ];
 
@@ -60,137 +68,47 @@ export const products = [
   export const projects = [
     {
       id: 1,
+      title: "Portfolio Application - Developed with React.js and Bootstrap",
+      des: "Explore the limited functionality website and get in touch for the complete product.",
+      img: "/projects/portfolio-project.png",
+      iconLists: ["/logo/boostrap.svg", "/logo/javascript.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+      link: "https://portfolio.project.rprakashdass.in",
+    },
+    {
+      id: 2,
       title: "Toppings - Online Cooking Forum",
       des: "Discover, share, and master delicious recipes with our vibrant cooking community! 🥘✨ From beginner tips to gourmet tricks, we've got something for every foodie. Join now and turn your kitchen into a culinary adventure! 👩‍🍳👨‍🍳",
-      img: "/toppings.png",
+      img: "/projects/toppings.png",
       iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
       link: "https://toppings.project.rprakashdass.in",
     },
     {
-      id: 2,
+      id: 3,
       title: "Real Time Face Recognition - Flask App",
       des: "Unlock fast, secure, and accurate identification with real-time face recognition! 🔍✨",
-      img: "/p3.svg",
+      img: "/projects/face_detection_project.jpg",
       iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
       link: "https://github.com/rprakashdass/realtime-face-recognition",
     },
     {
-      id: 3,
+      id: 4,
       title: "RedConnect - Blood Donation Management",
       des: "Save lives effortlessly with RedConnect! ❤️🩸 Connect donors and recipients in real-time, making blood donation faster and easier.",
-      img: "/bds.png",
+      img: "/projects/bds.png",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
       link: "https://redconnect.rprakashdass.in/",
     },
-    {
-        id: 4,
-        title: "Public Transport Tracker - A console Based Application",
-        des: "Navigate your commute with ease using the Public Transport Tracker! 🚍⏱️ A console-based application for real-time tracking and smarter travel planning.",
-        img: "/public_bus_tracking.png",
-        iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-        link: "https://github.com/rprakashdass/public-transport-tracking",
-      },
+    // {
+    //     id: 5,
+    //     title: "Public Transport Tracker - A console Based Application",
+    //     des: "Navigate your commute with ease using the Public Transport Tracker! 🚍⏱️ A console-based application for real-time tracking and smarter travel planning.",
+    //     img: "/projects/public_bus_tracking.png",
+    //     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    //     link: "https://github.com/rprakashdass/public-transport-tracking",
+    //   },
   ];
 
-
-
-  export const testimonials = [
-    {
-      quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
-    },
-    {
-      quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
-    },
-    {
-      quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
-    },
-    {
-      quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
-    },
-    {
-      quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
-    },
-  ];
-  
-  export const companies = [
-    {
-      id: 1,
-      name: "cloudinary",
-      img: "/cloud.svg",
-      nameImg: "/cloudName.svg",
-    },
-    {
-      id: 2,
-      name: "appwrite",
-      img: "/app.svg",
-      nameImg: "/appName.svg",
-    },
-    {
-      id: 3,
-      name: "HOSTINGER",
-      img: "/host.svg",
-      nameImg: "/hostName.svg",
-    },
-    {
-      id: 4,
-      name: "stream",
-      img: "/s.svg",
-      nameImg: "/streamName.svg",
-    },
-    {
-      id: 5,
-      name: "docker.",
-      img: "/dock.svg",
-      nameImg: "/dockerName.svg",
-    },
-  ];
-  
-  export const workExperience = [
-    {
-      id: 1,
-      title: "Frontend Engineer Intern",
-      desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
-      className: "md:col-span-2",
-      thumbnail: "/exp1.svg",
-    },
-    {
-      id: 2,
-      title: "Mobile App Dev - JSM Tech",
-      desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-      className: "md:col-span-2", // change to md:col-span-2
-      thumbnail: "/exp2.svg",
-    },
-    {
-      id: 3,
-      title: "Freelance App Dev Project",
-      desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-      className: "md:col-span-2", // change to md:col-span-2
-      thumbnail: "/exp3.svg",
-    },
-    {
-      id: 4,
-      title: "Lead Frontend Developer",
-      desc: "Developed and maintained user-facing features using modern frontend technologies.",
-      className: "md:col-span-2",
-      thumbnail: "/exp4.svg",
-    },
-  ];
-  
+ 
 
   export const socialMedia = [
     {

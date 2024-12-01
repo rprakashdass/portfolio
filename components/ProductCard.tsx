@@ -6,15 +6,15 @@ import { PinContainer } from "./ui/PinContainer";
 
 export const ProductCard = () => {
   return (
-    <div id="projects" className="py-20 px-20">
+    <div id="products" className="py-20 px-20">
       <h1 className="heading">
           My {' '}
         <span className="text-highlight"> 
           Freelance {' '}
-        </span>Products
+        </span>Projects
       </h1>
 
-      <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
+      <div className="flex flex-wrap items-center justify-center p-4 md:gap-16 mt-10">
         {products.map((item, index) => (
           <div
             className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
@@ -26,10 +26,9 @@ export const ProductCard = () => {
             >
               <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
                 <div
-                  className="relative w-full h-full overflow-hidden lg:rounded-3xl"
-                  style={{ backgroundColor: "#13162D" }}
+                  className="relative w-full h-full overflow-hidden lg:rounded-3xl border-gray-300"
+                  // style={{ backgroundColor: "#13162D" }}
                 >
-                  <img src="/bg.png" alt="bgimg" />
                 </div>
                 <img
                   src={item.img}
@@ -52,17 +51,6 @@ export const ProductCard = () => {
                 {item.des}
               </p>
 
-              <div className="flex justify-center items-center border-t-2">
-                  {/* <p onClick={ () => {
-                      window.location.href = "#contact"
-                  }} className="lg:text-xl md:text-xs text-sm text-purple">
-                    Reach Out to me
-                  </p> */}
-                  <p className="mt-5">
-                    View Demo
-                  </p>
-                  <FaLocationArrow className="ms-3" color="#CBACF9" />
-                </div>
             </PinContainer>
           </div>
         ))}
