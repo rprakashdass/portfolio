@@ -4,11 +4,11 @@ import { TextGenerateEffect } from './ui/TextGenerateEffect';
 import { MagicButton } from './ui/MagicButton';
 import { RiExternalLinkLine } from 'react-icons/ri';
 
-const words = `Building Intelligent Products and Robust Systems`;
+const words = `Crafting Smart Solutions and Reliable Systems`;
 
 const Hero = () => {
   return (
-    <section id='#hero' className="relative pb-20 pt-20 bg-white dark:bg-black">
+    <section id='#hero' className="relative pb-20 pt-20 bg-white dark:bg-black h-screen">
       {/* Background Spotlights */}
       <div>
         <Spotlight
@@ -27,7 +27,7 @@ const Hero = () => {
       <div className="relative flex justify-center my-20">
         <div className="flex flex-col items-center justify-center max-w-[89vw] md:max-w-2xl lg:max-w-[60vw]">
           <h2 className="text-sm text-center tracking-widest uppercase text-blue-100">
-            Shaping the Future with AI/ML and Scalable Solutions
+          Empowering Progress with AI/ML and Full Stack Expertise
           </h2>
 
           <TextGenerateEffect
@@ -39,7 +39,7 @@ const Hero = () => {
             Hi, I&apos;m Prakash Dass R, a student passionate about creating user-centric, impactful solutions through innovative technologies
           </p>
 
-          <a href="https://github.com/rprakashdass" className="mt-6">
+          <a href="https://github.com/rprakashdass" className="">
             <MagicButton
               title="Vist My GitHub"
               icon={<RiExternalLinkLine />}

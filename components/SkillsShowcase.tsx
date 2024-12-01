@@ -19,8 +19,12 @@ const Skills: React.FC = () => {
   };
 
   return (
-    <section id="skills" className="skills px-5 py-10 lg:mx-35">
-      <h1 className='heading mb-16 z-10'>My Skills</h1>
+    <section id="skills" className="skills px-5 py-10 lg:mx-28">
+      <h1 className='heading mb-32 my-20'>My {' '}
+        <span className='text-highlight'>
+        Skills
+          </span>
+          </h1>
       <div className="skills-container mx-auto max-w-6xl">
         {Object.entries(skills).map(([category, skillsList], index) => (
           <div key={index} className="category-section mb-12">
