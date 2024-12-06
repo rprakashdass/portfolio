@@ -25,6 +25,7 @@ export const skills: Skills = {
     { name: 'HTML', logo: '/logos/html.svg' },
     { name: 'CSS', logo: '/logos/css.svg' },
     { name: 'Bootstrap', logo: '/logos/bootstrap.svg' },
+    { name: 'Tailwind', logo: '/logos/tailwind.svg' },
     { name: 'JavaScript', logo: '/logos/js.svg' },
   ],
   'Libraries & Frameworks': [
@@ -85,9 +86,9 @@ export const products = [
     },
     {
       id: 3,
-      title: "RedConnect - Blood Donation Management",
+      title: "Blood Management System",
       des: "Save lives effortlessly with RedConnect! ❤️🩸 Connect donors and recipients in real-time, making blood donation faster and easier.",
-      img: "/projects/bds.png",
+      img: "/projects/blood-bank-management-system.jpg",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
       link: "https://redconnect.rprakashdass.in/",
     },
