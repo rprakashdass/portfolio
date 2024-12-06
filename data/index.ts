@@ -31,15 +31,16 @@ export const skills: Skills = {
     { name: 'React', logo: '/logos/react.svg' },
     { name: 'Node.js', logo: '/logos/node.png' },
     { name: 'Express.js', logo: '/logos/express.png' },
+    { name: 'Pandas & Numpy', logo: '/logos/pandas.svg' },
     { name: 'Flask', logo: '/logos/flask.svg' },
     { name: 'Django', logo: '/logos/django.svg' },
-    { name: 'Tensorflow', logo: '/logos/tf.svg' },
   ],
   'Databases & Tools': [
     { name: 'MongoDB', logo: '/logos/mongodb.svg' },
     { name: 'MySQL', logo: '/logos/mysql.svg' },
     { name: 'Git', logo: '/logos/git.svg' },
     { name: 'Figma', logo: '/logos/figma.svg' },
+    { name: 'Linux', logo: '/logos/linux.svg' },
   ],
 };
 
@@ -84,6 +85,14 @@ export const products = [
     },
     {
       id: 3,
+      title: "RedConnect - Blood Donation Management",
+      des: "Save lives effortlessly with RedConnect! ❤️🩸 Connect donors and recipients in real-time, making blood donation faster and easier.",
+      img: "/projects/bds.png",
+      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+      link: "https://redconnect.rprakashdass.in/",
+    },
+    {
+      id: 4,
       title: "Real Time Face Recognition - Flask App",
       des: "Unlock fast, secure, and accurate identification with real-time face recognition! 🔍✨",
       img: "/projects/face_detection_project.jpg",
@@ -91,13 +100,19 @@ export const products = [
       link: "https://github.com/rprakashdass/realtime-face-recognition",
     },
     {
-      id: 4,
-      title: "RedConnect - Blood Donation Management",
-      des: "Save lives effortlessly with RedConnect! ❤️🩸 Connect donors and recipients in real-time, making blood donation faster and easier.",
-      img: "/projects/bds.png",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-      link: "https://redconnect.rprakashdass.in/",
+      id: 5,
+      title: "TechXplorer - A Hackathon & Coding Competition Platform",
+      des: "TechXplorer is an innovative platform designed to host and manage hackathons and coding competitions seamlessly. It allows organizers to create events, track participant progress, and evaluate submissions efficiently. Participants can showcase their skills and compete for top positions in various technical challenges.",
+      img: "/projects/techxplorer.jpeg",
+      iconLists: [
+        "Hackathon Management",
+        "Live Coding Challenges",
+        "Leaderboard System",
+        "Submission Evaluation"
+      ],
+      link: "https://github.com/rprakashdass/techxplorer",
     },
+    
     // {
     //     id: 5,
     //     title: "Public Transport Tracker - A console Based Application",

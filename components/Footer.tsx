@@ -14,9 +14,9 @@ const Footer = () => {
                 <p className="text-white-200 md:mt-8 mt-4 mb-6 text-center sm:line-clamp-2">
                     If you're ready to elevate your digital presence or need help with your next project, let's connect and create something amazing together.
                 </p>
-                <a className="mb-6" href="mailto:rprakashdass@gmail.com">
+                <a className="mb-6" href="https://linkedin.com/in/rprakashdass">
                     <MagicButton
-                        title="Get in Touch"
+                        title="Connect on LinkedIn"
                         icon={<FaLocationArrow />}
                         position="right"
                     />

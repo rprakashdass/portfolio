@@ -9,14 +9,14 @@ const ResumeSection = () => {
             <p className="mb-5 text-lg text-gray-700">
                 Whether you are looking for a full-time employee or a freelance expert, I’m available for opportunities.
             </p>
-            <div className="inline-flex items-center bg-blue-600 text-white py-2 px-5 rounded-lg font-bold hover:bg-blue-700 transition duration-300 cursor-pointer">
+            <div className="inline-flex justify-center items-center bg-blue-600 text-white py-2 px-5 rounded-lg font-bold hover:bg-blue-700 transition duration-300 cursor-pointer">
                 <a
                     href={resume}
                     download
                     className="ml-3 flex items-center"
                     >
-                    <span>Download My Resume</span>
-                    <FaDownload size={24} />
+                    <span className="me-3">Download My Resume</span>
+                    <FaDownload size={16} />
                 </a>
             </div>
         </section>

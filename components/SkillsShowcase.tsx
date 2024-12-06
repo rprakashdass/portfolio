@@ -19,8 +19,8 @@ const Skills: React.FC = () => {
   };
 
   return (
-    <section id="skills" className="skills px-5 py-10 lg:mx-28">
-      <h1 className='heading mb-32 my-20'>My {' '}
+    <section id="skills" className="skills px-5 lg:py-10 lg:mx-28">
+      <h1 className='heading mb-32 lg:my-20'>My {' '}
         <span className='text-highlight'>
         Skills
           </span>
