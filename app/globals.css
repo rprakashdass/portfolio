@@ -5,7 +5,10 @@
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 240 10% 3.9%;
+    --foreground: 240 10% 3.9%; 
+/* custom */
+    --highlight: #ee6cfa;
+    --bg: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(13,4,46,1) 0%, rgba(201,63,214,0.8533613274411327) 72%);
 
     --card: 0 0% 100%;
     --card-foreground: 240 10% 3.9%;
@@ -33,6 +36,7 @@
     --ring: 240 10% 3.9%;
 
     --radius: 0.5rem;
+
   }
 
   .dark {
@@ -63,6 +67,16 @@
     --border: 240 3.7% 15.9%;
     --input: 240 3.7% 15.9%;
     --ring: 240 4.9% 83.9%;
+  }
+
+  ::selection{
+    background-color: var(--highlight);
+    color: aliceblue;
+  }
+  
+  .herobg{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(13,4,46,1) 0%, rgba(13,1,14,0.8533613274411327) 72%);
   }
 }
 

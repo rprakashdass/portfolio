@@ -28,9 +28,9 @@ const Hero = () => {
 
       {/* Main Content */}
       <div className="relative flex flex-col items-center justify-center max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] text-center space-y-6">
-        <h2 className="text-sm tracking-widest uppercase text-blue-100">
+        {/* <h2 className="text-sm tracking-widest uppercase text-blue-100">
           Empowering Progress with AI/ML and Full Stack Expertise
-        </h2>
+        </h2> */}
 
         <TextGenerateEffect
           className="text-[40px] md:text-5xl lg:text-6xl"
