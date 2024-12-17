@@ -107,6 +107,6 @@
 }
 
 .animate-skill-gradient{
-  /* animation: skill-gradient 5s ease infinite; */
-  background-size: 200% 200%;
+  animation: skill-gradient 7s ease infinite;
+  background-size: 200% 100%;
 }

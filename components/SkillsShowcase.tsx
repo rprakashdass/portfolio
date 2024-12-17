@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { skills } from '../data';
+import { motion } from 'framer-motion';
 
 const Skills: React.FC = () => {
   return (
@@ -14,6 +15,14 @@ const Skills: React.FC = () => {
       </h1>
       <div className="skills-container mx-auto max-w-6xl">
         {Object.entries(skills).map(([category, skillsList], index) => (
+          <motion.div
+            key={index}
+            initial={{opacity: 0, y: 75}}
+            whileInView={{opacity: 1, y:0}}
+            viewport={{ once: true}}
+            transition={{ duration: 0.5, delay: 0.35}}
+          >
+
           <div key={index} className="category-section mb-12">
             <div className="flex items-center mb-6">
               <div className="flex-grow border-t border-gray-400" />
@@ -23,9 +32,10 @@ const Skills: React.FC = () => {
 
             <div className="cards-wrapper grid gap-5 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
               {skillsList.map((skill, skillIndex) => (
-                <div key={skillIndex} className="flex items-center justify-between p-4 border rounded-lg  shadow-sm relative">
+                <div key={skillIndex} className="flex items-center justify-between p-4 border-0 rounded-lg  shadow-sm relative">
                   {/* animation */}
-                  <div className='absolute inset-0 animate-skill-gradient bg-gradient-to-r from-black opacity-30 to-purple'></div>
+                  <div className='absolute inset-0 animate-skill-gradient bg-gradient-to-r from-[#0d0d0d] via-[#2c003e] to-[#1a1a40] opacity-40 blur-sm'></div>
+
                   {/* Skill name */}
                   <p className="skill-item text-lg font-medium">{skill.name}</p>
 
@@ -47,6 +57,8 @@ const Skills: React.FC = () => {
               ))}
             </div>
           </div>
+
+          </motion.div>
         ))}
       </div>
     </section>
