@@ -1,9 +1,9 @@
 export const navItems = [
-    { name: "Products", link: "#products" },
-    { name: "Projects", link: "#projects" },
-    { name: "Social Media", link: "#social-media" },
-    { name: "Contact", link: "#contact" },
-  ];
+  { name: "Products", link: "#products" },
+  { name: "Projects", link: "#projects" },
+  { name: "Social Media", link: "#social-media" },
+  { name: "Contact", link: "#contact" },
+];
 
 
 export interface Skill {
@@ -51,7 +51,7 @@ export const products = [
   {
     id: 2,
     title: "Client Management System",
-    des:"Developed using PHP: This application enables automated task assignment and follow-ups with minimal human intervention",
+    des: "Developed using PHP: This application enables automated task assignment and follow-ups with minimal human intervention",
     img: "/products/cms.png",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
     link: "http://cms-phpapp.kesug.com/",
@@ -67,122 +67,127 @@ export const products = [
 ];
 
 
-  
-  export const projects = [
-    {
-      id: 1,
-      title: "Portfolio Application - Developed with React.js and Bootstrap",
-      des: "Explore the limited functionality website and get in touch for the complete product.",
-      img: "/projects/portfolio-project.png",
-      iconLists: ["/logo/boostrap.svg", "/logo/javascript.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-      link: "https://portfolio.project.rprakashdass.in",
-    },
-    {
-      id: 2,
-      title: "Toppings - Online Cooking Forum",
-      des: "Discover, share, and master delicious recipes with our vibrant cooking community! 🥘✨ From beginner tips to gourmet tricks, we've got something for every foodie. Join now and turn your kitchen into a culinary adventure! 👩‍🍳👨‍🍳",
-      img: "/projects/toppings.png",
-      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-      link: "https://toppings.project.rprakashdass.in",
-    },
-    {
-      id: 3,
-      title: "Blood Management System",
-      des: "Save lives effortlessly with RedConnect! ❤️🩸 Connect donors and recipients in real-time, making blood donation faster and easier.",
-      img: "/projects/blood-bank-management-system.jpg",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-      link: "https://redconnect.rprakashdass.in/",
-    },
-    {
-      id: 4,
-      title: "Real Time Face Recognition - Flask App",
-      des: "Unlock fast, secure, and accurate identification with real-time face recognition! 🔍✨",
-      img: "/projects/face_detection_project.jpg",
-      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-      link: "https://github.com/rprakashdass/realtime-face-recognition",
-    },
-    {
-      id: 5,
-      title: "TechXplorer - A Hackathon & Coding Competition Platform",
-      des: "TechXplorer is an innovative platform designed to host and manage hackathons and coding competitions seamlessly. It allows organizers to create events, track participant progress, and evaluate submissions efficiently. Participants can showcase their skills and compete for top positions in various technical challenges.",
-      img: "/projects/techxplorer.jpeg",
-      iconLists: [
-        "Hackathon Management",
-        "Live Coding Challenges",
-        "Leaderboard System",
-        "Submission Evaluation"
-      ],
-      link: "https://github.com/rprakashdass/techxplorer",
-    },
-    
-    // {
-    //     id: 5,
-    //     title: "Public Transport Tracker - A console Based Application",
-    //     des: "Navigate your commute with ease using the Public Transport Tracker! 🚍⏱️ A console-based application for real-time tracking and smarter travel planning.",
-    //     img: "/projects/public_bus_tracking.png",
-    //     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    //     link: "https://github.com/rprakashdass/public-transport-tracking",
-    //   },
-  ];
+export const projects = [
+  {
+    id: 1,
+    title: "Portfolio Application - Developed with React.js and Bootstrap",
+    des: [
+      "Explore this functional website showcasing modern portfolio designs.",
+      "Contact us for the complete product experience.",
+    ],
+    img: "/projects/portfolio-project.png",
+    live: "https://portfolio.rprakashdass.in",
+    code: "https://github.com/rprakashdass/portfolio",
+    link: "https://portfolio.rprakashdass.in",
+  },
+  {
+    id: 2,
+    title: "Toppings - Online Cooking Forum",
+    des: [
+      "Discover and share delicious recipes with a vibrant cooking community.",
+      "Join now and turn your kitchen into a culinary adventure!",
+    ],
+    img: "/projects/toppings.jpg",
+    live: "https://toppings.rprakashdass.in",
+    code: "https://github.com/rprakashdass/toppings",
+    link: "https://toppings.rprakashdass.in",
+  },
+  {
+    id: 3,
+    title: "Blood Management System",
+    des: [
+      "Connect blood donors and recipients effortlessly with RedConnect.",
+      "Save lives faster and easier with real-time blood donation.",
+    ],
+    img: "/projects/blood-bank-management-system.jpg",
+    live: "https://redconnect.rprakashdass.in",
+    code: "https://github.com/rprakashdass/blood-management-system",
+    link: "https://redconnect.rprakashdass.in",
+  },
+  {
+    id: 4,
+    title: "Real Time Face Recognition - Flask App",
+    des: [
+      "Experience fast, secure, and accurate identification.",
+      "Built with Flask and advanced real-time facial recognition technology.",
+    ],
+    img: "/projects/face_detection_project.jpg",
+    live: "",
+    code: "https://github.com/rprakashdass/realtime-face-recognition",
+    link: "https://github.com/rprakashdass/realtime-face-recognition",
+  },
+  {
+    id: 5,
+    title: "TechXplorer - A Hackathon & Coding Competition Platform",
+    des: [
+      "Host and manage hackathons and coding competitions seamlessly.",
+      "Track progress, evaluate submissions, and enable participants to compete effectively.",
+    ],
+    img: "/projects/techxplorer.jpeg",
+    live: "",
+    code: "https://github.com/rprakashdass/techxplorer",
+    link: "https://github.com/rprakashdass/techxplorer",
+  },
+];
 
- 
 
-  export const socialMedia = [
-    {
-      id: 1,
-      img: "/soc/github.png",
-      link: "https://github.com/rprakashdass",
-    },
-    {
-      id: 2,
-      img: "/soc/kaggle.png",
-      link: "https://kaggle.com/rprakashdass",
-    },
-    {
-      id: 3,
-      img: "/soc/logo_icon.png",
-      link: "https://linkedin.com/in/rprakashdass",
-    },
-    {
-      id: 4,
-      img: "/soc/whatsapp.png",
-      link: "https://wa.me/+917010047730",
-    },
-    {
-      id: 5,
-      img: "/soc/insta.png",
-      link: "https://instagram.com/rprakashdass",
-    },
-  ];
-  
-  export const tutorials = [
-    {
-      id: 1,
-      title: "Leetcode Mania",
-      description: "Explore a repository of optimized solutions for Leetcode problems. Each solution is designed for efficiency and clarity, covering a wide range of problem types. You can contribute by refining solutions, adding new approaches, or offering insights on improving performance.",
-      link: "https://github.com/rprakashdass/leetcode-problems",
-      contributors: ["rprakash dass"]
-    },
-    {
-      id: 2,
-      title: "NLP Easy Guides & Projects",
-      description: "A deep dive into Natural Language Processing (NLP), this series covers the essentials such as text preprocessing, sentiment analysis, and language models. Learn practical NLP skills through projects, and join in by contributing tutorials or expanding on key topics with real-world applications.",
-      link: "https://github.com/rprakashdass/nlp-tutorial",
-      contributors: ["rprakash dass"]
-    },
-    {
-      id: 3,
-      title: "C & C++ Guides",
-      description: "This tutorial offers a comprehensive roadmap for mastering C and C++. From basic syntax to complex concepts like memory management, pointers, and data structures, this resource is designed to cater to both beginners and seasoned developers aiming to strengthen their foundation in these powerful languages.",
-      link: "https://github.com/rprakashdass/c-cpp-tutorial",
-      contributors: ["rprakash dass"]
-    },
-    {
-      id: 4,
-      title: "Mastering OOPs",
-      description: "Learn Object-Oriented Programming (OOP) principles in depth with this tutorial. It covers core concepts such as classes, inheritance, polymorphism, and encapsulation. By building real-world examples and applications, this guide helps developers create scalable, maintainable, and clean software systems. Feel free to contribute with additional examples or advanced topics.",
-      link: "https://github.com/rprakashdass/OOP-Essentials",
-      contributors: ["rprakash dass"]
-    }
-  ];
-  
+
+
+export const socialMedia = [
+  {
+    id: 1,
+    img: "/soc/github.png",
+    link: "https://github.com/rprakashdass",
+  },
+  {
+    id: 2,
+    img: "/soc/kaggle.png",
+    link: "https://kaggle.com/rprakashdass",
+  },
+  {
+    id: 3,
+    img: "/soc/logo_icon.png",
+    link: "https://linkedin.com/in/rprakashdass",
+  },
+  {
+    id: 4,
+    img: "/soc/whatsapp.png",
+    link: "https://wa.me/+917010047730",
+  },
+  {
+    id: 5,
+    img: "/soc/insta.png",
+    link: "https://instagram.com/rprakashdass",
+  },
+];
+
+export const tutorials = [
+  {
+    id: 1,
+    title: "Leetcode Mania",
+    description: "Explore a repository of optimized solutions for Leetcode problems. Each solution is designed for efficiency and clarity, covering a wide range of problem types. You can contribute by refining solutions, adding new approaches, or offering insights on improving performance.",
+    link: "https://github.com/rprakashdass/leetcode-problems",
+    contributors: ["rprakash dass"]
+  },
+  {
+    id: 2,
+    title: "NLP Easy Guides & Projects",
+    description: "A deep dive into Natural Language Processing (NLP), this series covers the essentials such as text preprocessing, sentiment analysis, and language models. Learn practical NLP skills through projects, and join in by contributing tutorials or expanding on key topics with real-world applications.",
+    link: "https://github.com/rprakashdass/nlp-tutorial",
+    contributors: ["rprakash dass"]
+  },
+  {
+    id: 3,
+    title: "C & C++ Guides",
+    description: "This tutorial offers a comprehensive roadmap for mastering C and C++. From basic syntax to complex concepts like memory management, pointers, and data structures, this resource is designed to cater to both beginners and seasoned developers aiming to strengthen their foundation in these powerful languages.",
+    link: "https://github.com/rprakashdass/c-cpp-tutorial",
+    contributors: ["rprakash dass"]
+  },
+  {
+    id: 4,
+    title: "Mastering OOPs",
+    description: "Learn Object-Oriented Programming (OOP) principles in depth with this tutorial. It covers core concepts such as classes, inheritance, polymorphism, and encapsulation. By building real-world examples and applications, this guide helps developers create scalable, maintainable, and clean software systems. Feel free to contribute with additional examples or advanced topics.",
+    link: "https://github.com/rprakashdass/OOP-Essentials",
+    contributors: ["rprakash dass"]
+  }
+];
