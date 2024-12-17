@@ -8,8 +8,6 @@ import LinkTree from "@/components/LinkTree";
 import { ProductCard } from "@/components/ProductCard";
 import ResumeSection from "@/components/ResumeSection";
 import Tutorials from "@/components/Pages/Tutorials/Tutorials";
-import { About } from "@/components/About";
-
 // import { About } from "@/components/About";
 
 export default function Home() {

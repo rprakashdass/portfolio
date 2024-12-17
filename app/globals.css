@@ -5,10 +5,9 @@
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 240 10% 3.9%; 
-/* custom */
+    --foreground: 240 10% 3.9%;
+
     --highlight: #ee6cfa;
-    --bg: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(13,4,46,1) 0%, rgba(201,63,214,0.8533613274411327) 72%);
 
     --card: 0 0% 100%;
     --card-foreground: 240 10% 3.9%;
@@ -73,11 +72,6 @@
     background-color: var(--highlight);
     color: aliceblue;
   }
-  
-  .herobg{
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(13,4,46,1) 0%, rgba(13,1,14,0.8533613274411327) 72%);
-  }
 }
 
 @layer base {
@@ -100,4 +94,19 @@
   .black-gradient {
     background: linear-gradient(90deg, #161a31 0%, #06091f 100%);
   }
+}
+
+/* skill section */
+@keyframes skill-gradient{
+  0% {
+    background-position: 0% 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+}
+
+.animate-skill-gradient{
+  /* animation: skill-gradient 5s ease infinite; */
+  background-size: 200% 200%;
 }
