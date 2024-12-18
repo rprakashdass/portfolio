@@ -1,10 +1,10 @@
+
 export const navItems = [
   { name: "Products", link: "#products" },
-  { name: "Projects", link: "#projects" },
-  { name: "Social Media", link: "#social-media" },
+  { name: "Projects", link: '#projects'},
+  { name: "Contributions", link: "#contributions" },
   { name: "Contact", link: "#contact" },
 ];
-
 
 export interface Skill {
   name: string;
@@ -165,29 +165,45 @@ export const tutorials = [
   {
     id: 1,
     title: "Leetcode Mania",
-    description: "Explore a repository of optimized solutions for Leetcode problems. Each solution is designed for efficiency and clarity, covering a wide range of problem types. You can contribute by refining solutions, adding new approaches, or offering insights on improving performance.",
+    description: [
+      "120+ Problems",
+      "Optimized Solutions",
+      "Community Contributions"
+    ],
     link: "https://github.com/rprakashdass/leetcode-problems",
-    contributors: ["rprakash dass"]
-  },
-  {
-    id: 2,
-    title: "NLP Easy Guides & Projects",
-    description: "A deep dive into Natural Language Processing (NLP), this series covers the essentials such as text preprocessing, sentiment analysis, and language models. Learn practical NLP skills through projects, and join in by contributing tutorials or expanding on key topics with real-world applications.",
-    link: "https://github.com/rprakashdass/nlp-tutorial",
     contributors: ["rprakash dass"]
   },
   {
     id: 3,
     title: "C & C++ Guides",
-    description: "This tutorial offers a comprehensive roadmap for mastering C and C++. From basic syntax to complex concepts like memory management, pointers, and data structures, this resource is designed to cater to both beginners and seasoned developers aiming to strengthen their foundation in these powerful languages.",
+    description: [
+      "Beginner to Advanced",
+      "Memory Management",
+      "Pointers & Data Structures"
+    ],
     link: "https://github.com/rprakashdass/c-cpp-tutorial",
+    contributors: ["rprakash dass"]
+  },
+  {
+    id: 2,
+    title: "NLP Easy Guides & Projects",
+    description: [
+      "Text Processing",
+      "Sentiment Analysis",
+      "Real-World Applications"
+    ],
+    link: "https://github.com/rprakashdass/nlp-tutorial",
     contributors: ["rprakash dass"]
   },
   {
     id: 4,
     title: "Mastering OOPs",
-    description: "Learn Object-Oriented Programming (OOP) principles in depth with this tutorial. It covers core concepts such as classes, inheritance, polymorphism, and encapsulation. By building real-world examples and applications, this guide helps developers create scalable, maintainable, and clean software systems. Feel free to contribute with additional examples or advanced topics.",
+    description: [
+      "OOP Principles",
+      "Real-World Examples",
+      "Scalable Systems"
+    ],
     link: "https://github.com/rprakashdass/OOP-Essentials",
     contributors: ["rprakash dass"]
-  }
+  },
 ];

@@ -5,9 +5,9 @@ import { MagicButton } from "./ui/MagicButton";
 
 const Footer = () => {
     return (
-        <footer className="w-full pt-20 pb-10 mb-10" id="contact">
+        <footer className="w-full py-20">
 
-            <div id="#contact" className="flex flex-col items-center">
+            <div className="flex flex-col items-center">
                 <h1 className="heading lg:max-w-[45vw] sm:mb-6 mb-4">
                     Looking to <span className="text-highlight">collaborate</span> on exciting projects?
                 </h1>
@@ -23,14 +23,14 @@ const Footer = () => {
                 </a>
             </div>
 
-                <p className="md:text-base m-5 mb-2 text-sm md:font-normal font-light text-center">
-                    {new Date().toLocaleDateString('en-US', {
-                        weekday: 'long',
-                        year: 'numeric',
-                        month: 'long',
-                        day: 'numeric',
-                    })}
-                </p>
+            <p className="md:text-base m-5 mb-2 text-sm md:font-normal font-light text-center">
+                {new Date().toLocaleDateString('en-US', {
+                    weekday: 'long',
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric',
+                })}
+            </p>
         </footer>
     );
 };

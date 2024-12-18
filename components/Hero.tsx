@@ -1,5 +1,4 @@
 import React from 'react';
-import { Spotlight } from './ui/Spotlight';
 import { TextGenerateEffect } from './ui/TextGenerateEffect';
 import { MagicButton } from './ui/MagicButton';
 import { RiExternalLinkLine } from 'react-icons/ri';
@@ -8,50 +7,49 @@ const words = `Crafting Smart Solutions and Reliable Systems`;
 
 const Hero = () => {
   return (
-    <section
-      id="hero"
-      className="relative flex items-center justify-center h-screen bg-white dark:bg-black"
-    >
-      {/* Background Spotlights */}
-      <div>
-        <Spotlight
-          className="-top-5 left-full h-[80vh] w-[60vw]"
-          fill="purple"
-        />
-      </div>
+    <section className="relative hero-gradient h-[90vh] flex items-center overflow-clip">
+      <div className="mx-auto px-6 lg:px-12 relative">
+        {/* Main Content */}
+        <div className="relative mt-[3vh] flex flex-col items-center text-center space-y-6 max-w-4xl mx-auto">
+          {/* Tagline */}
+          <h2 className="text-xs md:text-sm tracking-widest uppercase rainbow-gradient text-transparent bg-clip-text lg:mt-[#80px] absolute">
+            Empowering Progress with AI/ML and Full Stack Expertise
+          </h2>
 
-      {/* Gradient Mask */}
-      <div
-        className="absolute top-0 left-0 h-screen w-full bg-white dark:bg-black
-        dark:bg-grid-white/[0.03] bg-grid-black-100/[0.2]"
-      />
-
-      {/* Main Content */}
-      <div className="relative flex flex-col items-center justify-center max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] text-center space-y-6">
-        {/* <h2 className="text-sm tracking-widest uppercase text-blue-100">
-          Empowering Progress with AI/ML and Full Stack Expertise
-        </h2> */}
-
-        <TextGenerateEffect
-          className="text-[40px] md:text-5xl lg:text-6xl"
-          words={words}
-        />
-
-        <p className="mt-4 text-sm tracking-wider md:text-lg lg:text-2xl">
-          Hi, I&apos;m Prakash Dass R, a student passionate about creating user-centric products
-        </p>
-
-        <a href="https://github.com/rprakashdass">
-          <MagicButton
-            title="Visit My GitHub"
-            icon={<RiExternalLinkLine />}
-            position="right"
+          {/* Main Heading */}
+          <TextGenerateEffect
+            className="text-[32px] md:text-5xl lg:text-6xl font-bold tracking-tighter text-white"
+            words={words}
           />
-        </a>
-      </div>
 
-      {/* Spacer to increase distance between sections */}
-      <div className="absolute bottom-0 left-0 w-full h-20 lg:h-40" />
+          {/* Subtext */}
+          <p className="mt-4 text-sm md:text-lg lg:text-xl text-gray-300">
+            Hi,
+            I&apos;m {" "}
+            <span className='text-[#ee6cfa] font-semibold font-serif'>
+              Prakash Dass R
+            </span> , a student passionate about creating user-centric products
+          </p>
+
+          {/* Button */}
+          <a
+            href="https://github.com/rprakashdass"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <MagicButton
+              title="Visit My GitHub"
+              icon={<RiExternalLinkLine />}
+              position="right"
+            />
+          </a>
+        </div>
+
+        <div
+          className="absolute w-[120vw] h-[20rem] bg-black rounded-[100%] left-1/2 -translate-x-1/2 border-8 border-[#B48CDE] blur-sm bg-[radial-gradient(closest-side, #B48CDE_92%,  #000_82%)]"
+        ></div>
+
+      </div>
     </section>
   );
 };

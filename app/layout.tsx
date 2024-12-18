@@ -1,21 +1,11 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import { DM_Sans } from "next/font/google";
 import "./globals.css";
-import { ThemeProvider } from "./provider";
+import clsx from 'clsx';
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
-// Importing custom fonts
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+// font
+const dmSans = DM_Sans({ subsets: ["latin"] });
 
 // Page metadata
 export const metadata: Metadata = {
@@ -30,17 +20,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
+    <html lang="en" className={clsx(dmSans.className, "antialiased")}>
+      <head>
+        <link rel="icon" href="/favicon.ico"></link>
+      </head>
       <body>
         <SpeedInsights/>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="dark"
-          enableSystem
-          disableTransitionOnChange
-        >
           {children}
-        </ThemeProvider>
       </body>
     </html>
   );

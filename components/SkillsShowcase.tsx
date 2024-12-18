@@ -6,10 +6,10 @@ import { motion } from 'framer-motion';
 
 const Skills: React.FC = () => {
   return (
-    <section id="skills" className="skills px-5 lg:py-10 lg:mx-28">
-      <h1 className="heading mb-32 lg:my-20">
+    <section className="px-5 mx-4 lg:mx-28">
+      <h1 className="heading my-[5rem]">
         My{' '}
-        <span className="text-highlight">
+        <span className="highlight-text">
           Skills
         </span>
       </h1>
@@ -20,7 +20,7 @@ const Skills: React.FC = () => {
             initial={{opacity: 0, y: 75}}
             whileInView={{opacity: 1, y:0}}
             viewport={{ once: true}}
-            transition={{ duration: 0.5, delay: 0.35}}
+            transition={{ duration: 0.5, delay: 0.25}}
           >
 
           <div key={index} className="category-section mb-12">
@@ -34,7 +34,7 @@ const Skills: React.FC = () => {
               {skillsList.map((skill, skillIndex) => (
                 <div key={skillIndex} className="flex items-center justify-between p-4 border-0 rounded-lg  shadow-sm relative">
                   {/* animation */}
-                  <div className='absolute inset-0 animate-skill-gradient bg-gradient-to-r from-[#0d0d0d] via-[#2c003e] to-[#1a1a40] opacity-40 blur-sm'></div>
+                  <div className='absolute inset-0 animate-skill-gradient bg-gradient-to-r from-[#0d0d0d] via-[#3c0153] to-[#1a1a40] opacity-40 blur-sm'></div>
 
                   {/* Skill name */}
                   <p className="skill-item text-lg font-medium">{skill.name}</p>

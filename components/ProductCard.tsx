@@ -6,15 +6,15 @@ import { PinContainer } from "./ui/PinContainer";
 
 export const ProductCard = () => {
   return (
-    <div id="products" className="py-20 px-20">
-      <h1 className="heading">
+    <div className="pt-20 px-20">
+      <h1 className="heading mb-10">
           My {' '}
-        <span className="text-highlight"> 
+        <span className="highlight-text"> 
           Freelance {' '}
         </span>Projects
       </h1>
 
-      <div className="flex flex-wrap items-center justify-center p-4 md:gap-16 mt-10">
+      <div className="flex flex-wrap items-center justify-center p-4 md:gap-16">
         {products.map((item, index) => (
           <div
             className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"

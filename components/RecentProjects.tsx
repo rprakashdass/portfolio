@@ -6,13 +6,30 @@ import { PinContainer } from "@/components/ui/PinContainer";
 
 export const RecentProjects = () => {
   return (
-    <div id="projects" className="py-20 px-20">
-      <h1 className="heading">
-        Some of{" "}
-        <span className="text-highlight">My projects</span>
-      </h1>
-      <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
-        {projects.slice(0, 4).map((item) => ( // Slice to show only the first 4 projects
+    <div className="py-20 px-20">
+
+      <div className="text-center py-8">
+        <h1 className="text-4xl md:text-5xl font-bold mb-6">
+          Some of{" "}
+          <span className="text-transparent bg-clip-text highlight-text">
+            My Projects
+          </span>
+        </h1>
+        <p className="text-lg text-gray-500 max-w-2xl mx-auto leading-relaxed mb-6">
+          A collection of innovative, exciting, and creative projects showcasing my skills in design, development, and problem-solving.
+        </p>
+
+        <a
+          href="/projects"
+          className="text-blue-400 hover:text-blue-600 font-semibold text-lg transition-colors duration-300"
+        >
+          See all projects
+        </a>
+      </div>
+
+
+      <div className="flex flex-wrap items-center justify-center p-4 gap-16">
+        {projects.slice(0, 2).map((item) => (
           <div
             className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
             key={item.id}

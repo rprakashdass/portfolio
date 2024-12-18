@@ -3,7 +3,7 @@ import { socialMedia } from '../data';
 
 const LinkTree = () => {
   return (
-    <section id="social-media" className="py-10">
+    <section className="py-10">
       <div className="flex justify-center gap-6">
         {socialMedia.map((media, index) => (
           <a

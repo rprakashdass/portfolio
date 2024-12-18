@@ -5,12 +5,11 @@ import { FaBolt, FaCode, FaFire, FaLocationArrow } from "react-icons/fa6";
 import { projects } from "@/data";
 import { PinContainer } from "@/components/ui/PinContainer";
 
-export const RecentProjects = () => {
+export const Projects = () => {
   return (
     <div id="projects" className="py-20 px-20">
       <h1 className="heading">
-        Some of{" "}
-        <span className="text-highlight">My projects</span>
+        <span className="highlight-text">My projects</span>
       </h1>
       <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
 
@@ -47,7 +46,7 @@ export const RecentProjects = () => {
                 {item.title}
               </h1>
 
-              <p
+              <div
                 className="lg:text-xl lg:font-normal font-light text-sm line-clamp-none"
                 style={{
                   color: "#BEC1DD",
@@ -62,25 +61,26 @@ export const RecentProjects = () => {
                 ))}
 
 
-              </p>
+              </div>
 
               <div className="flex flex-col sm:flex-row items-center justify-around mt-7 mb-3 gap-5">
-                <div className="flex justify-center w-full items-center bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 hover:translate-x-2 hover:translate-y-4 transition-all duration-300 ease-in-out">
-                  <a href={item.live} className="flex lg:text-xl md:text-xs text-sm z-10 text-white hover:text-yellow-400">
-                    Live Site
-                  </a>
-                  <FaLocationArrow className="ms-3 text-white hover:text-yellow-400 transition-colors duration-300" />
-                </div>
+                {item.live &&
+                  <div className="flex justify-center w-full items-center bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 hover:translate-x-2 hover:translate-y-4 transition-all duration-300 ease-in-out">
+                    <a href={item.live} className="flex lg:text-xl md:text-xs text-sm z-10 text-white hover:text-yellow-400">
+                      Live Site
+                    </a>
+                    <FaLocationArrow className="ms-3 text-white hover:text-yellow-400 transition-colors duration-300" />
+                  </div>
+                }
 
-                <div className="flex justify-center w-full items-center bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 hover:translate-x-2 hover:translate-y-4 transition-all duration-300 ease-in-out">
-                  <a href={item.code} className="flex lg:text-xl md:text-xs text-sm z-10 text-white hover:text-pink-400">
-                    Code
-                  </a>
-                  <FaCode className="ms-3 text-white hover:text-pink-400 transition-colors duration-300" />
-                </div>
-
-
-
+                {item.code &&
+                  <div className="flex justify-center w-full items-center bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 hover:translate-x-2 hover:translate-y-4 transition-all duration-300 ease-in-out">
+                    <a href={item.code} className="flex lg:text-xl md:text-xs text-sm z-10 text-white hover:text-pink-400">
+                      Code
+                    </a>
+                    <FaCode className="ms-3 text-white hover:text-pink-400 transition-colors duration-300" />
+                  </div>
+                }
               </div>
 
             </PinContainer>
