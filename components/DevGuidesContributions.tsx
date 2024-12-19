@@ -44,3 +44,4 @@ export const DevGuidesContributions = () => {
         </div>
     )
 }
+export default DevGuidesContributions;

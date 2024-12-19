@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={clsx(dmSans.className, "antialiased")}>
       <head>
-        <link rel="icon" href="/favicon.ico"></link>
+        <link rel="icon" href="favicon2.png"></link>
       </head>
       <body>
         <SpeedInsights/>

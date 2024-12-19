@@ -58,20 +58,21 @@ export const FloatingNav = ({
           duration: 0.2,
         }}
         className={cn(
-          "flex bg-slate-950 max-w-fit md:min-w-[70vw] lg:min-w-fit fixed z-[5000] top-10 inset-x-0 mx-auto px-10 py-5 rounded-lg border border-white/20 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] items-center justify-center space-x-4",
+          "flex max-w-fit fixed z-[5000] top-10 inset-x-0 mx-auto p-1 rounded-lg border border-white/20 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] items-center justify-center space-x-4",
+          "p-2",
+          "sm:py-2 sm:px-7",
+          "md:py-3 md:px-7",
+          "lg:min-w-fit md:min-w-[70vw]",
           className
         )}
-        // style={{
-        //   borderRadius: "12px",
-        //   border: "1px solid rgba(255, 255, 255, 0.125)",
-        // }}
+        
       >
         {navItems.map((navItem: any, idx: number) => (
           <Link
             key={`link=${idx}`}
             href={navItem.link}
             className={cn(
-              "relative items-center  flex space-x-1 text-white hover:underline decoration-solid underline-offset-4"
+              "relative items-center flex space-x-1 text-lg font-bold tracking-wide text-highlight hover:underline decoration-solid underline-offset-4 line-clamp-1"
             )}
           >
             <span className="block sm:hidden">{navItem.icon}</span>

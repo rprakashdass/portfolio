@@ -55,7 +55,7 @@ export const RecentProjects = () => {
                 {item.title}
               </h1>
 
-              <p
+              <div
                 className="lg:text-xl lg:font-normal font-light text-sm line-clamp-none"
                 style={{
                   color: "#BEC1DD",
@@ -67,7 +67,7 @@ export const RecentProjects = () => {
                     {list}
                   </p>
                 ))}
-              </p>
+              </div>
             </PinContainer>
           </div>
         ))}
@@ -75,3 +75,5 @@ export const RecentProjects = () => {
     </div>
   );
 };
+
+export default RecentProjects
