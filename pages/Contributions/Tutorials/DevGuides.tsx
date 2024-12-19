@@ -2,7 +2,6 @@ import { tutorials } from "@/data";
 import React from 'react'
 import ContributionsCardGenerator from "./ContributionsCardGenerator";
 
-
 export default function DevGuides() {
     return (
         <div className="p-10 bg-gray-900 text-white">
@@ -15,20 +14,17 @@ export default function DevGuides() {
             </p>
 
             <div className="flex flex-wrap gap-10 justify-center items-center mx-auto">
-                {tutorials.map((item) => {
-
+                {(tutorials || []).map((item: any) => {
                     return (
-
                         <ContributionsCardGenerator
+                            key={item.link}
                             title={item.title}
                             description={item.description}
                             link={item.link}
                         />
-
                     );
                 })}
             </div>
         </div>
-
     );
 }

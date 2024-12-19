@@ -1,38 +1,85 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio Application
 
-## Getting Started
+A sleek, modern portfolio application designed to showcase projects, skills, and experiences with an elegant user interface. Built with cutting-edge technologies and optimized for performance and scalability.
 
-First, run the development server:
+## Live Preview
+Check out the live application: [rprakashdass.in](https://rprakashdass.in)
 
-The logos: https://www.svgrepo.com
+## Features
+- **Modern Design:** Designed with [Accentricity UI](https://ui.aceternity.com) for a visually appealing and user-friendly interface.
+- **Performance-Optimized:** Developed using [Next.js](https://nextjs.org/) with TypeScript for fast and efficient rendering.
+- **Styling:** Styled using [Tailwind CSS](https://tailwindcss.com) for utility-first, responsive designs.
+- **Typography Animation:** Integrated [Cursify](https://cursify.dev) for animated text and cursor effects.
+- **Error Reporting:** Error monitoring and tracking using [Sentry](https://sentry.io).
+- **Deployed on Vercel:** Leveraging Vercel for seamless and efficient deployment.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Tech Stack
+- **Framework:** Next.js + TypeScript
+- **Styling:** Tailwind CSS
+- **UI Components:** Accentricity UI
+- **Animation:** Cursify
+- **Error Reporting:** Sentry
+- **Package Manager:** pnpm
+- **Deployment:** Vercel
+
+## Installation
+
+### Prerequisites
+- Node.js (>= 16.x)
+- pnpm (>= 7.x)
+
+### Steps
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/rprakashdass/portfolio.git
+   cd portfolio
+   ```
+2. Install dependencies:
+   ```bash
+   pnpm install
+   ```
+3. Run the development server:
+   ```bash
+   pnpm dev
+   ```
+4. Open your browser and navigate to:
+   ```
+   http://localhost:3000
+   ```
+
+## Project Structure
+```
+portfolio/
+├── components/        # Reusable UI components
+├── pages/             # Application pages
+├── styles/            # Global and Tailwind CSS styles
+├── public/            # Static assets
+├── utils/             # Helper functions
+├── data/              # Data for projects, skills, etc.
+└── sentry/            # Sentry configuration
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Deployment
+The application is automatically deployed on Vercel from the main branch. For manual deployment:
+1. Build the application:
+   ```bash
+   pnpm build
+   ```
+2. Start the production server:
+   ```bash
+   pnpm start
+   ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Contributing
+Feel free to fork the repository and submit pull requests for enhancements or bug fixes.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Feedback
+If you encounter any issues or have suggestions, please open an issue in the [GitHub repository](https://github.com/rprakashdass/portfolio/issues).
 
-## Learn More
+## License
+This project is licensed under the [MIT License](LICENSE).
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Author
+**Prakash Dass R**
+- GitHub: [rprakashdass](https://github.com/rprakashdass)
+- Website: [rprakashdass.in](https://rprakashdass.in)

@@ -1,5 +1,4 @@
-import React from 'react'
-import { FaRocket } from 'react-icons/fa6'
+import { FaRocket } from "react-icons/fa6";
 
 interface TutorialsCardGeneratorProps {
     title: string;
@@ -8,7 +7,7 @@ interface TutorialsCardGeneratorProps {
 }
 
 const ContributionsCardGenerator: React.FC<TutorialsCardGeneratorProps> = (
-    { title, description, link }
+    { title, description = [], link }
 ) => {
     return (
         <div className="w-full md:w-[48%] lg:w-[30%] border-2 border-gray-600 rounded-lg bg-gray-800 transition-all duration-300">
@@ -38,4 +37,4 @@ const ContributionsCardGenerator: React.FC<TutorialsCardGeneratorProps> = (
     );
 };
 
-export default ContributionsCardGenerator
+export default ContributionsCardGenerator;
