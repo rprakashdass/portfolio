@@ -19,7 +19,10 @@ export default function Home() {
       <div className="w-full">
         {/* Floating navigation */}
         <FloatingNav navItems={navItems} />
-        <NeonCursor />
+        <div className="sm:block hidden">
+  <NeonCursor />
+</div>
+
         
         {/* Hero Section with Motion */}
         <motion.section 

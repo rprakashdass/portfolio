@@ -39,7 +39,7 @@ const Hero = () => {
           />
         </a>
       </div>
-
+ 
       <div
           className="absolute w-[220vw] h-[50vh] top-auto bg-black rounded-[100%] left-1/2 -translate-x-1/2 border-8 border-[#B48CDE] blur-sm bg-[radial-gradient(closest-side, #B48CDE_92%,  #000_82%)]"
         />
