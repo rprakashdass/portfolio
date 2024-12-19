@@ -52,4 +52,4 @@ export const About = () => {
     )
 }
 
-export default Footer;
+export default About;
