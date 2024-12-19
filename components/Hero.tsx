@@ -7,10 +7,12 @@ const words = `Crafting Smart Solutions and Reliable Systems`;
 
 const Hero = () => {
   return (
-    <section className="relative hero-gradient h-[90vh] flex items-center overflow-clip">
+    <section className="relative hero-gradient h-[100vh] flex items-center overflow-clip">
       <div className="mx-auto px-6 lg:px-12 relative">
         {/* Main Content */}
-        <div className="relative mt-[3vh] flex flex-col items-center text-center space-y-6 max-w-4xl mx-auto">
+
+
+        <div className="relative sm:mt-0 lg:mt-[5vh] flex flex-col items-center text-center space-y-6 max-w-4xl mx-auto">
           {/* Tagline */}
           <h2 className="text-xs md:text-sm tracking-widest uppercase rainbow-gradient text-transparent bg-clip-text lg:mt-[#80px] absolute">
             Empowering Progress with AI/ML and Full Stack Expertise
@@ -46,8 +48,8 @@ const Hero = () => {
         </div>
 
         <div
-          className="absolute w-[120vw] h-[20rem] bg-black rounded-[100%] left-1/2 -translate-x-1/2 border-8 border-[#B48CDE] blur-sm bg-[radial-gradient(closest-side, #B48CDE_92%,  #000_82%)]"
-        ></div>
+          className="absolute w-[220vw] h-[20rem] bg-black rounded-[100%] left-1/2 -translate-x-1/2 border-8 border-[#B48CDE] blur-sm bg-[radial-gradient(closest-side, #B48CDE_92%,  #000_82%)]"
+        />
 
       </div>
     </section>
