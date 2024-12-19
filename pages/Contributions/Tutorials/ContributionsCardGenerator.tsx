@@ -2,20 +2,16 @@ import React from 'react'
 import { FaRocket } from 'react-icons/fa6'
 
 interface TutorialsCardGeneratorProps {
-    key: number;
     title: string;
     description: string[];
     link: string;
 }
 
 const ContributionsCardGenerator: React.FC<TutorialsCardGeneratorProps> = (
-    { key, title, description, link }
+    { title, description, link }
 ) => {
     return (
-        <div
-            key={key}
-            className="w-full md:w-[48%] lg:w-[30%] border-2 border-gray-600 rounded-lg bg-gray-800 transition-all duration-300"
-        >
+        <div className="w-full md:w-[48%] lg:w-[30%] border-2 border-gray-600 rounded-lg bg-gray-800 transition-all duration-300">
             <div className="p-5">
                 <h1 className="font-bold text-center text-xl mb-5">{title}</h1>
                 <hr className="border-red-500 mb-5" />

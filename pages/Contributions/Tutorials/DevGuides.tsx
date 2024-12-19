@@ -1,6 +1,5 @@
 import { tutorials } from "@/data";
 import React from 'react'
-import { FaRocket } from "react-icons/fa6";
 import ContributionsCardGenerator from "./ContributionsCardGenerator";
 
 
@@ -21,7 +20,6 @@ export default function DevGuides() {
                     return (
 
                         <ContributionsCardGenerator
-                            key={item.id}
                             title={item.title}
                             description={item.description}
                             link={item.link}
