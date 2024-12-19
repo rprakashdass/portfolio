@@ -34,7 +34,6 @@ export const skills: Skills = {
     { name: 'Express.js', logo: '/logos/express.png' },
     { name: 'Pandas', logo: '/logos/pandas.svg' },
     { name: 'Numpy', logo: '/logos/numpy.svg' },
-    { name: 'Flask', logo: '/logos/flask.svg' },
     { name: 'Django', logo: '/logos/django.svg' },
   ],
   'Databases & Tools': [
@@ -76,9 +75,9 @@ export const projects = [
       "Contact us for the complete product experience.",
     ],
     img: "/projects/portfolio-project.png",
-    live: "https://portfolio.rprakashdass.in",
+    live: "https://portfolio.project.rprakashdass.in",
     code: "https://github.com/rprakashdass/portfolio",
-    link: "https://portfolio.rprakashdass.in",
+    link: "https://portfolio.project.rprakashdass.in",
   },
   {
     id: 2,
@@ -88,9 +87,9 @@ export const projects = [
       "Join now and turn your kitchen into a culinary adventure!",
     ],
     img: "/projects/toppings.jpg",
-    live: "https://toppings.rprakashdass.in",
+    live: "https://toppings.project.rprakashdass.in",
     code: "https://github.com/rprakashdass/toppings",
-    link: "https://toppings.rprakashdass.in",
+    link: "https://toppings.project.rprakashdass.in",
   },
   {
     id: 3,
@@ -100,9 +99,9 @@ export const projects = [
       "Save lives faster and easier with real-time blood donation.",
     ],
     img: "/projects/blood-bank-management-system.jpg",
-    live: "https://redconnect.rprakashdass.in",
+    live: "https://redconnect.project.rprakashdass.in",
     code: "https://github.com/rprakashdass/blood-management-system",
-    link: "https://redconnect.rprakashdass.in",
+    link: "https://redconnect.project.rprakashdass.in",
   },
   {
     id: 4,
@@ -146,7 +145,7 @@ export const socialMedia = [
   },
   {
     id: 3,
-    img: "/soc/logo_icon.png",
+    img: "/soc/grey.png",
     link: "https://linkedin.com/in/rprakashdass",
   },
   {

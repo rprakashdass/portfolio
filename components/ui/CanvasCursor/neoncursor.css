@@ -1,0 +1,64 @@
+/* neoncursor.css */
+
+.neon-cursor-container {
+    pointer-events: none; /* Ensure the cursor doesn't interfere with UI interactions */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+  }
+  
+  /* Main cursor dot */
+  .cursor-main {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: linear-gradient(
+      to bottom,
+      #000000,
+      #200D42 34%,
+      #4F21A1 65%,
+      #A46EDB 82%
+    );
+    position: absolute;
+    box-shadow: 0 0 15px rgba(164, 110, 219, 0.7), 0 0 25px rgba(79, 33, 161, 0.5);
+    mix-blend-mode: difference;
+    pointer-events: none;
+  }
+  
+  /* Trailing circle */
+  .cursor-trail {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid rgba(164, 110, 219, 0.8);
+    background: radial-gradient(
+      to bottom,
+      #200D42 34%,
+      #4F21A1 65%,
+      #A46EDB 82%
+    );
+    position: absolute;
+    box-shadow: 0 0 10px rgba(164, 110, 219, 0.4), 0 0 20px rgba(79, 33, 161, 0.2);
+    pointer-events: none;
+  }
+  
+  /* Outer glow */
+  .cursor-glow {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: radial-gradient(
+      circle,
+      rgba(164, 110, 219, 0.3),
+      rgba(79, 33, 161, 0.1)
+    );
+    position: absolute;
+    filter: blur(15px);
+    opacity: 0.5;
+    pointer-events: none;
+    transition: opacity 0.2s, transform 0.2s;
+  }
+  

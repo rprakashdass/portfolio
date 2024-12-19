@@ -11,15 +11,15 @@ import ProductCard from "@/components/ProductCard";
 import ResumeSection from "@/components/ResumeSection";
 import { FaArrowRight } from "react-icons/fa6";
 import DevGuidesContributions from "@/components/DevGuidesContributions";
-import CanvasCursor from "@/components/ui/CanvasCursor/CanvasCursor";
+import NeonCursor from "@/components/ui/CanvasCursor/NeonCursor";
 
 export default function Home() {
   return (
     <main className="relative flex flex-col mx-auto justify-center items-center overflow-clip">
-      <CanvasCursor />
       <div className="w-full">
         {/* Floating navigation */}
         <FloatingNav navItems={navItems} />
+        <NeonCursor />
         
         {/* Hero Section with Motion */}
         <motion.section 

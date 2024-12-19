@@ -21,6 +21,7 @@ Check out the live application: [rprakashdass.in](https://rprakashdass.in)
 - **Error Reporting:** Sentry
 - **Package Manager:** pnpm
 - **Deployment:** Vercel
+- **Favicon:** freepik
 
 ## Installation
 

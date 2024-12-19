@@ -32,9 +32,9 @@ const Skills: React.FC = () => {
 
             <div className="cards-wrapper grid gap-5 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
               {skillsList.map((skill, skillIndex) => (
-                <div key={skillIndex} className="flex items-center justify-between p-4 border-0 rounded-lg  shadow-sm relative">
+                <div key={skillIndex} className="flex items-center justify-between p-4 border border-purple-400/40 rounded-lg  shadow-sm relative">
                   {/* animation */}
-                  <div className='absolute inset-0 animate-skill-gradient bg-gradient-to-r from-[#0d0d0d] via-[#3c0153] to-[#1a1a40] opacity-40 blur-sm'></div>
+                  <div className='absolute inset-0 animate-skill-gradient bg-gradient-to-r from-[#a16cad] via-[#3c0153] to-[#1a1a40] opacity-40'></div>
 
                   {/* Skill name */}
                   <p className="skill-item text-lg font-medium">{skill.name}</p>

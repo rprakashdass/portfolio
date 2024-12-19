@@ -14,7 +14,7 @@ const Hero = () => {
       <div className='mx-auto px-6 lg:px-12 relative'>
 
       <div className="relative flex flex-col items-center justify-center max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] text-center space-y-6">
-        <h2 className="text-sm lg:mt-10 tracking-widest uppercase rainbow-gradient text-transparent bg-clip-text">
+        <h2 className="text-sm lg:mt-10 tracking-widest uppercase">
           Empowering Progress with AI/ML and Full Stack Expertise
         </h2>
 
@@ -41,7 +41,7 @@ const Hero = () => {
       </div>
 
       <div
-          className="absolute w-[220vw] h-[20rem] md:hidden top-auto bg-black rounded-[100%] left-1/2 -translate-x-1/2 border-8 border-[#B48CDE] blur-sm bg-[radial-gradient(closest-side, #B48CDE_92%,  #000_82%)]"
+          className="absolute w-[220vw] h-[50vh] top-auto bg-black rounded-[100%] left-1/2 -translate-x-1/2 border-8 border-[#B48CDE] blur-sm bg-[radial-gradient(closest-side, #B48CDE_92%,  #000_82%)]"
         />
       </div>
 
