@@ -8,7 +8,6 @@ import LinkTree from "@/components/LinkTree";
 import { ProductCard } from "@/components/ProductCard";
 import ResumeSection from "@/components/ResumeSection";
 import { FaArrowRight } from "react-icons/fa6";
-import DevGuides from "@/pages/Contributions/Tutorials/DevGuides";
 import { DevGuidesContributions } from "@/components/DevGuidesContributions";
 import CanvasCursor from "@/components/ui/CanvasCursor/CanvasCursor";
 
