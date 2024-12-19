@@ -51,3 +51,5 @@ export const About = () => {
         </section>
     )
 }
+
+export default Footer;
