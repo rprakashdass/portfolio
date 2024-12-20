@@ -7,7 +7,7 @@ export default function DevGuides() {
         <div className="p-10 bg-gray-900 text-white">
             <h1
                 className="text-4xl font-extrabold text-center mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-teal-400">
-                Dev Guides
+                Tutorials & Resources
             </h1>
             <p className="text-center text-lg text-gray-300 mb-10">
                 Contribute to or explore top, concise, and resource-driven GitHub repositories for interview prep and more.

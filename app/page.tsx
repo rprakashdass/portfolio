@@ -20,18 +20,18 @@ export default function Home() {
         {/* Floating navigation */}
         <FloatingNav navItems={navItems} />
         <div className="sm:block hidden">
-  <NeonCursor />
-</div>
+          <NeonCursor />
+        </div>
 
-        
+
         {/* Hero Section with Motion */}
-        <motion.section 
-          id="about" 
+        <motion.section
+          id="about"
           className=""
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
+          viewport={{ once: false }}
         >
           <Hero />
         </motion.section>
@@ -52,60 +52,60 @@ export default function Home() {
         </div>
 
         {/* Skills Showcase */}
-        <motion.section 
-          id="skills" 
+        <motion.section
+          id="skills"
           className=""
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.25}}
-          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.25 }}
+          viewport={{ once: false }}
         >
           <Skills />
         </motion.section>
 
         {/* Product Cards */}
-        <motion.section 
-          id="products" 
+        <motion.section
+          id="products"
           className=""
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
+          transition={{ duration: 0.8, delay: 0.25 }}
+          viewport={{ once: false }}
         >
           <ProductCard />
         </motion.section>
 
         {/* Recent Projects */}
-        <motion.section 
-          id="projects" 
+        <motion.section
+          id="projects"
           className="section-gradient"
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5, delay: 0.25}}
+          transition={{ duration: 0.5, delay: 0.25 }}
           viewport={{ once: true }}
         >
           <RecentProjects />
         </motion.section>
 
         {/* Contributions */}
-        <motion.section 
-          id="contributions" 
+        <motion.section
+          id="contributions"
           className=""
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.25}}
+          transition={{ duration: 0.5, delay: 0.25 }}
           viewport={{ once: true }}
         >
           <DevGuidesContributions />
         </motion.section>
 
         {/* Resume and Link Tree */}
-        <motion.section 
-          id="social-media" 
+        <motion.section
+          id="social-media"
           className=""
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.25}}
+          transition={{ duration: 0.5, delay: 0.25 }}
           viewport={{ once: true }}
         >
           <ResumeSection />
@@ -113,13 +113,13 @@ export default function Home() {
         </motion.section>
 
         {/* Footer */}
-        <motion.section 
-          id="contact" 
+        <motion.section
+          id="contact"
           className="footer-gradient"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.25}}
-          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.25 }}
+          viewport={{ once: false }}
         >
           <Footer />
         </motion.section>

@@ -15,30 +15,28 @@ export interface Skills {
   [category: string]: Skill[];
 }
 
-export const skills: Skills = {
+export const skills: Record<string, { name: string; logo: string }[]> = {
   'Programming Languages': [
     { name: 'C', logo: '/logos/c.svg' },
     { name: 'C++', logo: '/logos/cpp.svg' },
     { name: 'Python', logo: '/logos/python.png' },
-  ],
-  'Web Development': [
-    { name: 'HTML', logo: '/logos/html.svg' },
-    { name: 'CSS', logo: '/logos/css.svg' },
-    { name: 'Bootstrap', logo: '/logos/bootstrap.svg' },
-    { name: 'Tailwind', logo: '/logos/tailwind.svg' },
     { name: 'JavaScript', logo: '/logos/js.svg' },
   ],
-  'Libraries & Frameworks': [
+  'Frameworks & Libraries': [
     { name: 'React', logo: '/logos/react.svg' },
     { name: 'Node.js', logo: '/logos/node.png' },
     { name: 'Express.js', logo: '/logos/express.png' },
+    { name: 'Django', logo: '/logos/django.svg' },
+    { name: 'Bootstrap', logo: '/logos/bootstrap.svg' },
+    { name: 'Tailwind CSS', logo: '/logos/tailwind.svg' },
     { name: 'Pandas', logo: '/logos/pandas.svg' },
     { name: 'Numpy', logo: '/logos/numpy.svg' },
-    { name: 'Django', logo: '/logos/django.svg' },
   ],
-  'Databases & Tools': [
+  'Databases': [
     { name: 'MongoDB', logo: '/logos/mongodb.svg' },
     { name: 'MySQL', logo: '/logos/mysql.svg' },
+  ],
+  'Tools & Platforms': [
     { name: 'Git', logo: '/logos/git.svg' },
     { name: 'Figma', logo: '/logos/figma.svg' },
     { name: 'Linux', logo: '/logos/linux.svg' },
@@ -128,8 +126,6 @@ export const projects = [
     link: "https://github.com/rprakashdass/techxplorer",
   },
 ];
-
-
 
 
 export const socialMedia = [
