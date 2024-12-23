@@ -20,7 +20,7 @@ const VolunteerExperienceCard: React.FC<VolunteerExperienceCardProps> = ({ role,
         <div className="flex border-white/30 shadow-md p-3 border rounded-lg animate-education-gradient duration-300 hover:cursor-pointer education-gradient">
             <div className="flex-1 text-left">
                 <h3 className="font-bold text-white text-xl">{role}</h3>
-                <h4 className="mb-2 text-black text-lg">{organization}</h4>
+                <h4 className="mb-2 text-black/60 text-lg">{organization}</h4>
                 <p className="mb-2 text-gray-500 text-sm italic">{year}</p>
                 <p>{description}</p>
             </div>
@@ -37,7 +37,7 @@ const EducationCard:
                     <h3 className="flex items-center font-bold text-white text-xl">
                         {degree}
                     </h3>
-                    <h4 className="mb-2 text-black text-lg">
+                    <h4 className="mb-2 text-black/60 text-lg">
                         {institution}
                     </h4>
                     <p className="mb-2 text-gray-500 text-sm italic">{year}</p>

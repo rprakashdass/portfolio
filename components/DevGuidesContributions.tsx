@@ -13,7 +13,7 @@ export const DevGuidesContributions = () => {
                 {(
                     ({ itemsData, showLessRef }: { itemsData: any, showLessRef: any }) => {
                         return (
-                            <div className="px-20">
+                            <div className="md:px-20">
 
                                 <div className="py-10 text-center text-white">
                                     <h1 className="mb-8 font-extrabold text-5xl">
@@ -29,7 +29,7 @@ export const DevGuidesContributions = () => {
                                 </div>
 
                                 <div
-                                    className={`flex flex-col flex-wrap md:flex-row gap-10 justify-center transition-opacity duration-500'}`}
+                                    className={`flex flex-col md:flex-row gap-10 justify-center transition-opacity duration-500'}`}
                                 >
                                     {itemsData.map((item: any) => (
                                         <ContributionsCardGenerator

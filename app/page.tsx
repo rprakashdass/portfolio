@@ -12,7 +12,7 @@ import ResumeSection from "@/components/ResumeSection";
 import { FaArrowRight } from "react-icons/fa6";
 import DevGuidesContributions from "@/components/DevGuidesContributions";
 import NeonCursor from "@/components/ui/CanvasCursor/NeonCursor";
-import EducationSection  from "@/components/Education";
+import EducationSection from "@/components/Education";
 
 export default function Home() {
   return (
@@ -57,13 +57,14 @@ export default function Home() {
         <motion.section
           id="education"
           className="mx-4 lg:mx-28 my-20 px-10"
-          initial={{ opacity: 0, x: -100 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5, delay: 0.25 }}
-          viewport={{ once: true }}
+          initial={{ opacity: 0, y: 50, scale: 0.95 }}
+          whileInView={{ opacity: 1, y: 0, scale: 1 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          viewport={{ once: false }}
         >
           <EducationSection />
         </motion.section>
+
 
         {/* Skills Showcase */}
         <motion.section
