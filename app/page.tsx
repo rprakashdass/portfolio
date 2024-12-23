@@ -80,7 +80,7 @@ export default function Home() {
         {/* Product Cards */}
         <motion.section
           id="products"
-          className="mx-4 lg:mx-28 my-15 px-10"
+          className="mx-4 lg:mx-28 mt-20 mb-15 px-10"
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.25 }}

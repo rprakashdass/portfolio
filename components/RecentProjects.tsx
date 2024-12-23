@@ -49,7 +49,7 @@ const RecentProjects = () => {
 
                     <PinContainer
                       title={item.title}
-                      href={item.link}
+                      href={item.title}
                     >
                       {/* Gradient Background */}
                       <div className="absolute inset-0 bg-gradient-to-b from-[#201717] via-[#151416] to-[#0d0d0d] opacity-30 rounded-lg"></div>
