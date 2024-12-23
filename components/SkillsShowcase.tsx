@@ -6,8 +6,8 @@ import { motion } from 'framer-motion';
 
 const Skills: React.FC = () => {
   return (
-    <section className="px-5 mx-4 lg:mx-28">
-      <h1 className="heading my-[5rem]">
+    <section className="">
+      <h1 className="heading">
         My{' '}
         <span className="highlight-text">
           Skills

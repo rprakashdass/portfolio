@@ -19,9 +19,6 @@ const config = {
       },
     },
     extend: {
-      container: {
-        padding: "1rem",
-      },
       colors: {
         highlight: {
             DEFAULT: "#ee6cfa",

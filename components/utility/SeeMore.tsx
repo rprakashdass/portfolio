@@ -27,8 +27,8 @@ export const SeeMore = ({ children, data }: {
   return (
     <>
       {children({ itemsData, showLessRef })}
-      <div className="flex justify-center my-2 opacity-20">
-        <button onClick={showAll ? handleShowLess : handleShowMore} className="inline-flex gap-4 text-2xl font-bold">
+      <div className="flex justify-center opacity-45 py-20">
+        <button onClick={showAll ? handleShowLess : handleShowMore} className="inline-flex gap-4 font-bold text-2xl">
           {showAll ?
             <span className="inline-flex">
               Show Less

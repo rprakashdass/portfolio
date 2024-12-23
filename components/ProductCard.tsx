@@ -6,18 +6,17 @@ import { PinContainer } from "./ui/PinContainer";
 
 export const ProductCard = () => {
   return (
-    <div className="pt-20 px-20">
-      <h1 className="heading mb-10">
+    <div className="">
+      <h1 className="heading">
           My {' '}
         <span className="highlight-text"> 
           Freelance {' '}
         </span>Projects
       </h1>
-
-      <div className="flex flex-wrap items-center justify-center p-4 md:gap-16">
+      <div className="flex flex-wrap items-center justify-center md:gap-16">
         {products.map((item, index) => (
           <div
-            className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
+            className="lg:min-h-[32.5rem] flex items-center justify-center sm:w-96 w-[80vw]"
             key={item.id}
           >
             <PinContainer
@@ -27,7 +26,6 @@ export const ProductCard = () => {
               <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
                 <div
                   className="relative w-full h-full overflow-hidden lg:rounded-3xl border-gray-300"
-                  // style={{ backgroundColor: "#13162D" }}
                 >
                 </div>
                 <img

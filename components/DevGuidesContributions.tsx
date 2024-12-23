@@ -13,17 +13,17 @@ export const DevGuidesContributions = () => {
                 {(
                     ({ itemsData, showLessRef }: { itemsData: any, showLessRef: any }) => {
                         return (
-                            <div className="py-20 px-20">
+                            <div className="px-20">
 
-                                <div className="text-center py-10 text-white">
-                                    <h1 className="text-5xl font-extrabold mb-8">
-                                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-teal-400">
+                                <div className="py-10 text-center text-white">
+                                    <h1 className="mb-8 font-extrabold text-5xl">
+                                        <span className="bg-clip-text bg-gradient-to-r from-blue-500 to-teal-400 text-transparent">
                                             Tutorials & Resources
                                         </span>
                                     </h1>
-                                    <p 
-                                    ref={showLessRef}
-                                    className="text-lg text-gray-400 mb-6 max-w-3xl mx-auto leading-relaxed">
+                                    <p
+                                        ref={showLessRef}
+                                        className="mx-auto mb-6 max-w-3xl text-gray-400 text-lg leading-relaxed">
                                         Explore tutorials on programming, algorithms, and NLP with practical insights. Learn or contribute today!
                                     </p>
                                 </div>

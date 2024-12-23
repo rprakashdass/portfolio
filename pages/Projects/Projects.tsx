@@ -1,23 +1,23 @@
 "use client";
 
-import { FaBolt, FaCode, FaFire, FaLocationArrow } from "react-icons/fa6";
+import { FaCode, FaFire, FaLocationArrow } from "react-icons/fa6";
 
 import { projects } from "@/data";
 import { PinContainer } from "@/components/ui/PinContainer";
 
 export const Projects = () => {
   return (
-    <div id="projects" className="py-20 px-20">
+    <div id="projects" className="px-20 py-20">
       <h1 className="heading">
         <span className="highlight-text">My projects</span>
       </h1>
-      <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
+      <div className="flex flex-wrap justify-center items-center gap-16 mt-10 p-4">
 
         {projects.map((item) => (
 
 
           <div
-            className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
+            className="flex justify-center items-center w-[80vw] sm:w-96 h-[25rem] lg:min-h-[32.5rem]"
             key={item.id}
           >
 
@@ -27,9 +27,9 @@ export const Projects = () => {
             >
               {/* Gradient Background */}
               <div className="absolute inset-0 bg-gradient-to-b from-[#201717] via-[#151416] to-[#0d0d0d] opacity-30 rounded-lg"></div>
-              <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
+              <div className="relative flex justify-center items-center mb-10 w-[80vw] sm:w-96 h-[20vh] lg:h-[30vh] overflow-hidden">
 
-                <div className="relative w-full h-full overflow-hidden rounded-lg shadow-lg">
+                <div className="relative shadow-lg rounded-lg w-full h-full overflow-hidden">
                   {/* Gradient Background */}
                   <div className="absolute inset-0 bg-gradient-to-b from-[#1a1a1a] via-[#2c003e] to-[#0d0d0d] opacity-80"></div>
 
@@ -37,17 +37,17 @@ export const Projects = () => {
                   <img
                     src={item.img}
                     alt="cover"
-                    className="z-10 absolute bottom-0" />
+                    className="bottom-0 z-10 absolute" />
                 </div>
 
               </div>
 
-              <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
+              <h1 className="line-clamp-1 font-bold text-base md:text-xl lg:text-2xl">
                 {item.title}
               </h1>
 
               <div
-                className="lg:text-xl lg:font-normal font-light text-sm line-clamp-none"
+                className="line-clamp-none font-light lg:font-normal text-sm lg:text-xl"
                 style={{
                   color: "#BEC1DD",
                 }}
@@ -63,22 +63,22 @@ export const Projects = () => {
 
               </div>
 
-              <div className="flex flex-col sm:flex-row items-center justify-around mt-7 mb-3 gap-5">
+              <div className="flex sm:flex-row flex-col justify-around items-center gap-5 mt-7 mb-3">
                 {item.live &&
-                  <div className="flex justify-center w-full items-center bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 hover:translate-x-2 hover:translate-y-4 transition-all duration-300 ease-in-out">
-                    <a href={item.live} className="flex lg:text-xl md:text-xs text-sm z-10 text-white hover:text-yellow-400">
+                  <div className="flex justify-center items-center bg-green-500 hover:bg-green-600 px-4 py-2 rounded-lg w-full text-white transition-all hover:translate-x-2 hover:translate-y-4 duration-300 ease-in-out">
+                    <a href={item.live} className="z-10 flex text-sm text-white md:text-xs lg:text-xl hover:text-yellow-400">
                       Live Site
                     </a>
-                    <FaLocationArrow className="ms-3 text-white hover:text-yellow-400 transition-colors duration-300" />
+                    <FaLocationArrow className="text-white hover:text-yellow-400 transition-colors duration-300 ms-3" />
                   </div>
                 }
 
                 {item.code &&
-                  <div className="flex justify-center w-full items-center bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 hover:translate-x-2 hover:translate-y-4 transition-all duration-300 ease-in-out">
-                    <a href={item.code} className="flex lg:text-xl md:text-xs text-sm z-10 text-white hover:text-pink-400">
+                  <div className="flex justify-center items-center bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-lg w-full text-white transition-all hover:translate-x-2 hover:translate-y-4 duration-300 ease-in-out">
+                    <a href={item.code} className="z-10 flex text-sm text-white md:text-xs lg:text-xl hover:text-pink-400">
                       Code
                     </a>
-                    <FaCode className="ms-3 text-white hover:text-pink-400 transition-colors duration-300" />
+                    <FaCode className="text-white hover:text-pink-400 transition-colors duration-300 ms-3" />
                   </div>
                 }
               </div>
