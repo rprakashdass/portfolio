@@ -52,8 +52,11 @@ const EducationCard:
 const EducationSection: React.FC = () => {
     return (
         <section>
-            <h2 className="heading">Academics</h2>
+            <h2 className="md:block hidden heading">Academics</h2>
             <div className="gap-3 grid grid-cols-1 md:grid-cols-2">
+                <h1 className="block md:hidden heading">
+                    Organization
+                </h1>
                 <EducationCard
                     degree="Bachelor of Technology in Artificial Intelligence and Machine Learning"
                     institution="Sri Shakthi Institute of Engineering and Technology"
@@ -66,6 +69,11 @@ const EducationSection: React.FC = () => {
                     year="OCT 2024 - DEC 2024"
                     description="Specializing in AI/ML, covering deep learning, computer vision, and data science."
                 />
+
+                <h1 className="block md:hidden grid-cols-1 heading">
+                    Organization
+                </h1>
+
                 <VolunteerExperienceCard
                     role="Community Service Director"
                     organization="Rotaract Club of Sri Shakthi Institute"
