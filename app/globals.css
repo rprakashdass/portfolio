@@ -14,7 +14,11 @@ body {
 }
 
 .heading {
-  margin-bottom: 2rem;
+  margin: 3rem 0rem;
+}
+
+.heading-purple{
+  color: #aa5397;
 }
 
 .hero-gradient {

@@ -17,12 +17,12 @@ interface VolunteerExperienceCardProps {
 
 const VolunteerExperienceCard: React.FC<VolunteerExperienceCardProps> = ({ role, organization, year, description }) => {
     return (
-        <div className="flex border-white/30 shadow-md p-3 border rounded-lg animate-education-gradient duration-300 hover:cursor-pointer education-gradient">
+        <div className="flex border-white/30 shadow-md p-3 border rounded-lg hover:cursor-pointer section-gradient">
             <div className="flex-1 text-left">
-                <h3 className="font-bold text-white text-xl">{role}</h3>
-                <h4 className="mb-2 text-black/60 text-lg">{organization}</h4>
+                <h3 className="font-bold text-white text-xl highlight-text">{role}</h3>
+                <h4 className="mb-2 text-gray-500 text-lg">{organization}</h4>
                 <p className="mb-2 text-gray-500 text-sm italic">{year}</p>
-                <p>{description}</p>
+                <p className="text-white/80">{description}</p>
             </div>
         </div>
     );
@@ -32,16 +32,16 @@ const VolunteerExperienceCard: React.FC<VolunteerExperienceCardProps> = ({ role,
 const EducationCard:
     React.FC<EducationCardProps> = ({ degree, institution, year, description }) => {
         return (
-            <div className="flex border-white/30 shadow-md p-3 border rounded-lg animate-education-gradient duration-300 hover:cursor-pointer education-gradient">
+            <div className="flex border-white/30 shadow-md p-3 border rounded-lg hover:cursor-pointer section-gradient">
                 <div className="flex-1 text-left">
-                    <h3 className="flex items-center font-bold text-white text-xl">
+                    <h3 className="flex items-center font-bold text-white text-xl highlight-text">
                         {degree}
                     </h3>
-                    <h4 className="mb-2 text-black/60 text-lg">
+                    <h4 className="mb-2 text-gray-500 text-lg">
                         {institution}
                     </h4>
                     <p className="mb-2 text-gray-500 text-sm italic">{year}</p>
-                    <p>{description}</p>
+                    <p className="text-white/80">{description}</p>
                 </div>
             </div>
 
@@ -54,8 +54,8 @@ const EducationSection: React.FC = () => {
         <section>
             <h2 className="md:block hidden heading">Academics</h2>
             <div className="gap-3 grid grid-cols-1 md:grid-cols-2">
-                <h1 className="block md:hidden heading">
-                    Organization
+                <h1 className="block md:hidden heading heading-purple">
+                    Education
                 </h1>
                 <EducationCard
                     degree="Bachelor of Technology in Artificial Intelligence and Machine Learning"
@@ -63,6 +63,10 @@ const EducationSection: React.FC = () => {
                     year="2022 - 2026"
                     description="Specializing in AI/ML, covering deep learning, computer vision, and data science."
                 />
+
+                <h1 className="block relative md:hidden heading heading-purple">
+                    Internship
+                </h1>
                 <EducationCard
                     degree="Artificial Intelligence Project Intern"
                     institution="Infosys Springboard 5.0 Batch 1"
@@ -70,7 +74,7 @@ const EducationSection: React.FC = () => {
                     description="Specializing in AI/ML, covering deep learning, computer vision, and data science."
                 />
 
-                <h1 className="block md:hidden grid-cols-1 heading">
+                <h1 className="block relative md:hidden grid-cols-1 heading heading-purple">
                     Organization
                 </h1>
 
