@@ -19,7 +19,7 @@ const VolunteerExperienceCard: React.FC<VolunteerExperienceCardProps> = ({ role,
     return (
         <div className="flex border-white/30 shadow-md p-3 border rounded-lg hover:cursor-pointer section-gradient">
             <div className="flex-1 text-left">
-                <h3 className="font-bold text-white text-xl highlight-text">{role}</h3>
+                <h3 className="font-bold text-purple-700 text-xl">{role}</h3>
                 <h4 className="mb-2 text-gray-500 text-lg">{organization}</h4>
                 <p className="mb-2 text-gray-500 text-sm italic">{year}</p>
                 <p className="text-white/80">{description}</p>
@@ -34,7 +34,7 @@ const EducationCard:
         return (
             <div className="flex border-white/30 shadow-md p-3 border rounded-lg hover:cursor-pointer section-gradient">
                 <div className="flex-1 text-left">
-                    <h3 className="flex items-center font-bold text-white text-xl highlight-text">
+                    <h3 className="flex items-center font-bold text-purple-600 text-xl">
                         {degree}
                     </h3>
                     <h4 className="mb-2 text-gray-500 text-lg">
@@ -54,7 +54,7 @@ const EducationSection: React.FC = () => {
         <section>
             <h2 className="md:block hidden heading">Academics</h2>
             <div className="gap-3 grid grid-cols-1 md:grid-cols-2">
-                <h1 className="block md:hidden heading heading-purple">
+                <h1 className="block md:hidden heading">
                     Education
                 </h1>
                 <EducationCard
@@ -64,7 +64,7 @@ const EducationSection: React.FC = () => {
                     description="Specializing in AI/ML, covering deep learning, computer vision, and data science."
                 />
 
-                <h1 className="block relative md:hidden heading heading-purple">
+                <h1 className="block relative md:hidden heading">
                     Internship
                 </h1>
                 <EducationCard
@@ -74,7 +74,7 @@ const EducationSection: React.FC = () => {
                     description="Specializing in AI/ML, covering deep learning, computer vision, and data science."
                 />
 
-                <h1 className="block relative md:hidden grid-cols-1 heading heading-purple">
+                <h1 className="block relative md:hidden grid-cols-1 heading">
                     Organization
                 </h1>
 
