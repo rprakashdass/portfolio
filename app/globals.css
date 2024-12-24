@@ -30,7 +30,7 @@ body {
 /* education gradient */
 
 .education-gradient {
-  background-image: linear-gradient(to bottom right, #a16cad, #3c0153, #1a1a40);
+  background-image: linear-gradient(to right, #a16cad, #3c0153, #1a1a40);
 }
 
 @keyframes education-gradient {
