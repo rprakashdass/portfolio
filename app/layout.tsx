@@ -12,6 +12,11 @@ export const metadata: Metadata = {
   description: "Explore the professional portfolio of R Prakash Dass, a skilled software developer, AI/ML specialist, and community leader with expertise in web development, artificial intelligence, and innovative solutions.",
   keywords: [
     "Prakash Dass R",
+    "rprakashdass",
+    "prakash",
+    "dass",
+    "modern portfolio",
+    "portfolio example",
     "Portfolio",
     "Software Developer",
     "AI Specialist",
@@ -54,8 +59,8 @@ export default function RootLayout({
         <link rel="icon" href="favicon2.png"></link>
       </head>
       <body>
-        <SpeedInsights/>
-          {children}
+        <SpeedInsights />
+        {children}
       </body>
     </html>
   );
