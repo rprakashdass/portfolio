@@ -46,20 +46,28 @@ export const skills: Record<string, { name: string; logo: string }[]> = {
 
 export const products = [
   {
-    id: 2,
-    title: "Client Management System",
-    des: "Developed using PHP: This application enables automated task assignment and follow-ups with minimal human intervention",
-    img: "/products/cms.png",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "http://cms-phpapp.kesug.com/",
+    id: 1,
+    title : "Rush Hour: Treasure Hunt Platform",
+    des : "Developed a serverless digital platform for a dynamic treasure hunt event conducted by the Rotaract Club of Sri Shakthi for fundraising. Implemented color-coded riddles, real-time timers using local storage and React hooks, and a custom random generator algorithm, efficiently handling 70+ simultaneous users.",
+    img : "/products/rushhour.jpg",
+    iconLists : ["/js.svg", "/react.svg", "/ts.svg", "/hooks.svg", "/algo.svg"],
+    link : "http://rushhour.rprakashdass.in/"
   },
   {
-    id: 3,
+    id: 2,
     title: "Payment Integration at Website",
     des: "Implemented the Razorpay Payment Gateway integration at http://srishakthimangofarm.in/ Contributed to the backend support team by assisting in the integration process, ensuring secure payment transactions, and troubleshooting any issues that arose during implementation.",
     img: "/products/payment-gateway-integration.jpg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
     link: "http://srishakthimangofarm.in/",
+  },
+  {
+    id: 3,
+    title: "Client Management System",
+    des: "Developed using PHP: This application enables automated task assignment and follow-ups with minimal human intervention",
+    img: "/products/cms.png",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+    link: "http://cms-phpapp.kesug.com/",
   },
 ];
 
