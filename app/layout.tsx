@@ -8,7 +8,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 const dmSans = DM_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "R Prakash Dass | Student | Aspiring Software Developer & AI & ML Specialist",
+  title: "R Prakash Dass | Student | Aspiring Software Developer | Full Stack",
   description: "Explore the professional portfolio of R Prakash Dass, a skilled software developer, AI/ML specialist, and community leader with expertise in web development, artificial intelligence, and innovative solutions.",
   keywords: [
     "Prakash Dass R",
