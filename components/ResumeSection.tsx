@@ -1,6 +1,6 @@
 import { FaDownload } from "react-icons/fa6";
 
-const resume = '/Resume/prakashdassr.pdf';
+const resume = '/resume/PrakashDass_Resume_2025.pdf';
 
 const ResumeSection = () => {
     return (

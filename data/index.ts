@@ -61,21 +61,29 @@ export const products = [
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
     link: "http://srishakthimangofarm.in/",
   },
+  // {
+  //   id: 3,
+  //   title: "Client Management System",
+  //   des: "Developed using PHP: This application enables automated task assignment and follow-ups with minimal human intervention",
+  //   img: "/products/cms.png",
+  //   iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+  //   link: "http://cms-phpapp.kesug.com/",
+  // },
   {
-    id: 3,
-    title: "Client Management System",
-    des: "Developed using PHP: This application enables automated task assignment and follow-ups with minimal human intervention",
-    img: "/products/cms.png",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "http://cms-phpapp.kesug.com/",
-  },
+    id: 4,
+    title: "New Year New Me - Task Tracker",
+    des: "A web application designed to help participants build discipline and focus by completing daily tasks over 21 days. Features user authentication with JWT and a clean, intuitive interface for task management.",
+    img: "/products/nynm.jpg",
+    iconLists: ["/mongodb.svg", "/express.svg", "/react.svg", "/nodejs.svg", "/jwt.svg"],
+    link: "https://resolutions.rprakashdass.in",
+  }
 ];
 
 
 export const projects = [
   {
     id: 1,
-    title: "Portfolio Application - Developed with React.js and Bootstrap",
+    title: "Portfolio Application with React JS",
     des: [
       "Explore this functional website showcasing modern portfolio designs.",
       "Contact us for the complete product experience.",
@@ -99,6 +107,18 @@ export const projects = [
   },
   {
     id: 3,
+    title: "Client Management System",
+    des: [
+      "An application enabling automated task assignment and follow-ups.",
+      "improves workflow efficiency and client interactions for businesses.",
+    ],
+    img: "/projects/cms.png",
+    live: "",
+    code: "https://github.com/rprakashdass/client-management-system",
+    link: "http://cms-phpapp.kesug.com/",
+  },
+  {
+    id: 4,
     title: "Blood Management System",
     des: [
       "Connect blood donors and recipients effortlessly with RedConnect.",
@@ -110,7 +130,7 @@ export const projects = [
     link: "https://redconnect.project.rprakashdass.in",
   },
   {
-    id: 4,
+    id: 5,
     title: "Real Time Face Recognition - Flask App",
     des: [
       "Experience fast, secure, and accurate identification.",
@@ -120,19 +140,19 @@ export const projects = [
     live: "",
     code: "https://github.com/rprakashdass/realtime-face-recognition",
     link: "https://github.com/rprakashdass/realtime-face-recognition",
-  },
-  {
-    id: 5,
-    title: "TechXplorer - A Hackathon & Coding Competition Platform",
-    des: [
-      "Host and manage hackathons and coding competitions seamlessly.",
-      "Track progress, evaluate submissions, and enable participants to compete effectively.",
-    ],
-    img: "/projects/techxplorer.jpeg",
-    live: "",
-    code: "https://github.com/rprakashdass/techxplorer",
-    link: "https://github.com/rprakashdass/techxplorer",
-  },
+  }
+  // {
+  //   id: 6,
+  //   title: "TechXplorer - A Hackathon & Coding Competition Platform",
+  //   des: [
+  //     "Host and manage hackathons and coding competitions seamlessly.",
+  //     "Track progress, evaluate submissions, and enable participants to compete effectively.",
+  //   ],
+  //   img: "/projects/techxplorer.jpeg",
+  //   live: "",
+  //   code: "https://github.com/rprakashdass/techxplorer",
+  //   link: "https://github.com/rprakashdass/techxplorer",
+  // },
 ];
 
 
