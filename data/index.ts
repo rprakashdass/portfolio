@@ -47,11 +47,11 @@ export const skills: Record<string, { name: string; logo: string }[]> = {
 export const products = [
   {
     id: 1,
-    title : "Rush Hour: Treasure Hunt Platform",
-    des : "Developed a serverless digital platform for a dynamic treasure hunt event conducted by the Rotaract Club of Sri Shakthi for fundraising. Implemented color-coded riddles, real-time timers using local storage and React hooks, and a custom random generator algorithm, efficiently handling 70+ simultaneous users.",
-    img : "/products/rushhour.jpg",
+    title : "Group Links",
+    des : "Developed a digital platform for a groups of 100+ members to share and manage links. The platform features a user-friendly interface, allowing users to add, edit, and delete links easily. It also includes a search functionality for quick access to specific links. The application is built using React.js and Node.js, ensuring a smooth user experience.",
+    img : "/products/group-chat.png",
     iconLists : ["/js.svg", "/react.svg", "/ts.svg", "/hooks.svg", "/algo.svg"],
-    link : "http://rushhour.rprakashdass.in/"
+    link : "http://g.rprakashdass.in/"
   },
   {
     id: 2,
@@ -61,22 +61,30 @@ export const products = [
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
     link: "http://srishakthimangofarm.in/",
   },
-  // {
-  //   id: 3,
-  //   title: "Client Management System",
-  //   des: "Developed using PHP: This application enables automated task assignment and follow-ups with minimal human intervention",
-  //   img: "/products/cms.png",
-  //   iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-  //   link: "http://cms-phpapp.kesug.com/",
-  // },
   {
-    id: 4,
+    id: 3,
+    title : "Rush Hour: Treasure Hunt Platform",
+    des : "Developed a serverless digital platform for a dynamic treasure hunt event conducted by the Rotaract Club of Sri Shakthi for fundraising. Implemented color-coded riddles, real-time timers using local storage and React hooks, and a custom random generator algorithm, efficiently handling 70+ simultaneous users.",
+    img : "/products/rushhour.jpg",
+    iconLists : ["/js.svg", "/react.svg", "/ts.svg", "/hooks.svg", "/algo.svg"],
+    link : "http://rushhour.rprakashdass.in/"
+  },
+  {
+    id: 6,
+    title: "Meme royale - Share Memes, Get Votes!",
+    des: "A social platform where users can share and vote on memes. Features include real-time voting, user profiles, meme categories, and a leaderboard system. Built with MERN stack and WebSocket for live updates.",
+    img: "/products/meme-royale.png",
+    iconLists: ["/mongodb.svg", "/express.svg", "/react.svg", "/nodejs.svg", "/jwt.svg"],
+    link: "https://meme-royale.rprakashdass.in",
+  },
+  {
+    id: 5,
     title: "New Year New Me - Task Tracker",
     des: "A web application designed to help participants build discipline and focus by completing daily tasks over 21 days. Features user authentication with JWT and a clean, intuitive interface for task management.",
     img: "/products/nynm.jpg",
     iconLists: ["/mongodb.svg", "/express.svg", "/react.svg", "/nodejs.svg", "/jwt.svg"],
     link: "https://resolutions.rprakashdass.in",
-  }
+  },
 ];
 
 
@@ -115,10 +123,10 @@ export const projects = [
     img: "/projects/cms.png",
     live: "",
     code: "https://github.com/rprakashdass/client-management-system",
-    link: "http://cms-phpapp.kesug.com/",
+    link: "",
   },
   {
-    id: 4,
+    id: 3,
     title: "Blood Management System",
     des: [
       "Connect blood donors and recipients effortlessly with RedConnect.",
@@ -130,7 +138,7 @@ export const projects = [
     link: "https://redconnect.project.rprakashdass.in",
   },
   {
-    id: 5,
+    id: 4,
     title: "Real Time Face Recognition - Flask App",
     des: [
       "Experience fast, secure, and accurate identification.",
@@ -139,7 +147,7 @@ export const projects = [
     img: "/projects/face_detection_project.jpg",
     live: "",
     code: "https://github.com/rprakashdass/realtime-face-recognition",
-    link: "https://github.com/rprakashdass/realtime-face-recognition",
+    link: "",
   }
   // {
   //   id: 6,
@@ -189,7 +197,7 @@ export const tutorials = [
     id: 1,
     title: "Leetcode Mania",
     description: [
-      "120+ Problems",
+      "270+ Problems",
       "Optimized Solutions",
       "Community Contributions"
     ],

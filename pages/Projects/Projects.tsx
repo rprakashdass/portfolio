@@ -14,13 +14,10 @@ export const Projects = () => {
       <div className="flex flex-wrap justify-center items-center gap-16 mt-10 p-4">
 
         {projects.map((item) => (
-
-
           <div
             className="flex justify-center items-center w-[80vw] sm:w-96 h-[25rem] lg:min-h-[32.5rem]"
             key={item.id}
           >
-
             <PinContainer
               title={item.title}
               href={item.link}
