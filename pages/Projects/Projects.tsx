@@ -23,21 +23,17 @@ export const Projects = () => {
               href={item.link}
             >
               {/* Gradient Background */}
-              <div className="absolute inset-0 bg-gradient-to-b from-[#201717] via-[#151416] to-[#0d0d0d] opacity-30 rounded-lg"></div>
-              <div className="relative flex justify-center items-center mb-10 w-[80vw] sm:w-96 h-[20vh] lg:h-[30vh] overflow-hidden">
+              {/* <div className="absolute inset-0 bg-gradient-to-b from-[#201717] via-[#151416] to-[#0d0d0d] opacity-30 rounded-lg"></div> */}
 
-                <div className="relative shadow-lg rounded-lg w-full h-full overflow-hidden">
-                  {/* Gradient Background */}
-                  <div className="absolute inset-0 bg-gradient-to-b from-[#1a1a1a] via-[#2c003e] to-[#0d0d0d] opacity-80"></div>
+              <div className="relative shadow-lg rounded-lg w-[70vw] sm:w-96 aspect-[16/10] overflow-hidden">
+              <img
+                src={item.img}
+                alt="cover"
+                className="w-full h-full object-cover"
+              />
+              {/* <div className="absolute inset-0 bg-gradient-to-b from-[#1a1a1a] via-[#2c003e] to-[#0d0d0d] opacity-80"></div> */}
+            </div>
 
-                  {/* Image */}
-                  <img
-                    src={item.img}
-                    alt="cover"
-                    className="bottom-0 z-10 absolute" />
-                </div>
-
-              </div>
 
               <h1 className="line-clamp-1 font-bold text-base md:text-xl lg:text-2xl">
                 {item.title}

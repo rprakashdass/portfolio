@@ -32,9 +32,11 @@ export const skills: Record<string, { name: string; logo: string }[]> = {
     { name: 'Pandas', logo: '/logos/pandas.svg' },
     { name: 'Numpy', logo: '/logos/numpy.svg' },
   ],
-  'Databases': [
+  'Databases & API': [
     { name: 'MongoDB', logo: '/logos/mongodb.svg' },
     { name: 'MySQL', logo: '/logos/mysql.svg' },
+    { name: 'GraphQL', logo: '/logos/graphql.svg' },
+    { name: 'Rest', logo: '/logos/rest.svg' },
   ],
   'Tools & Platforms': [
     { name: 'Git', logo: '/logos/git.svg' },
@@ -45,14 +47,6 @@ export const skills: Record<string, { name: string; logo: string }[]> = {
 
 
 export const products = [
-  {
-    id: 1,
-    title : "Group Links",
-    des : "Developed a digital platform for a groups of 100+ members to share and manage links. The platform features a user-friendly interface, allowing users to add, edit, and delete links easily. It also includes a search functionality for quick access to specific links. The application is built using React.js and Node.js, ensuring a smooth user experience.",
-    img : "/products/group-chat.png",
-    iconLists : ["/js.svg", "/react.svg", "/ts.svg", "/hooks.svg", "/algo.svg"],
-    link : "http://g.rprakashdass.in/"
-  },
   {
     id: 2,
     title: "Payment Integration at Website",
@@ -73,7 +67,7 @@ export const products = [
     id: 6,
     title: "Meme royale - Share Memes, Get Votes!",
     des: "A social platform where users can share and vote on memes. Features include real-time voting, user profiles, meme categories, and a leaderboard system. Built with MERN stack and WebSocket for live updates.",
-    img: "/products/meme-royale.png",
+    img: "/products/meme-royale.jpg",
     iconLists: ["/mongodb.svg", "/express.svg", "/react.svg", "/nodejs.svg", "/jwt.svg"],
     link: "https://meme-royale.rprakashdass.in",
   },
@@ -87,8 +81,19 @@ export const products = [
   },
 ];
 
-
 export const projects = [
+  {
+    id: 5,
+    title : "Group Links",
+    des : ["Developed a platform for a groups of members to share and manage links.",
+           "The platform allows users to add, edit and delete links easily."
+    ],
+    img : "/products/group-chat.png",
+    iconLists : ["/js.svg", "/react.svg", "/ts.svg", "/hooks.svg", "/algo.svg"],
+    live: "https://g.rprakashdass.in",
+    code: "https://github.com/rprakashdass/group-links",
+    link: "https://g.rprakashdass.in",
+  },
   {
     id: 1,
     title: "Portfolio Application with React JS",

@@ -6,10 +6,8 @@ import Link from "next/link";
 
 export const PinPerspective = ({
   title,
-  href,
 }: {
   title?: string;
-  href?: string;
 }) => {
   return (
     <motion.div className="pointer-events-none w-96 h-80 flex items-center justify-center opacity-0 group-hover/pin:opacity-100 z-[60] transition duration-500">
@@ -156,7 +154,7 @@ export const PinContainer = ({
       href={href}
     >
       {content}
-      <PinPerspective title={title} href={href} />
+      <PinPerspective title={title} />
     </Link>
   ) : (
     <div
@@ -165,7 +163,7 @@ export const PinContainer = ({
       onMouseLeave={onMouseLeave}
     >
       {content}
-      <PinPerspective title={title} href={href} />
+      <PinPerspective title={title} />
     </div>
   );
 };
