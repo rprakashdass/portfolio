@@ -53,7 +53,7 @@ export const products = [
     des: "Implemented the Razorpay Payment Gateway integration at http://srishakthimangofarm.in/ Contributed to the backend support team by assisting in the integration process, ensuring secure payment transactions, and troubleshooting any issues that arose during implementation.",
     img: "/products/payment-gateway-integration.jpg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "http://srishakthimangofarm.in/",
+    link: "http://srishakthimangofarm.in",
   },
   {
     id: 3,
@@ -61,7 +61,7 @@ export const products = [
     des : "Developed a serverless digital platform for a dynamic treasure hunt event conducted by the Rotaract Club of Sri Shakthi for fundraising. Implemented color-coded riddles, real-time timers using local storage and React hooks, and a custom random generator algorithm, efficiently handling 70+ simultaneous users.",
     img : "/products/rushhour.jpg",
     iconLists : ["/js.svg", "/react.svg", "/ts.svg", "/hooks.svg", "/algo.svg"],
-    link : "http://rushhour.rprakashdass.in/"
+    link : "http://rushhour.rprakashdass.in"
   },
   {
     id: 6,
@@ -106,19 +106,7 @@ export const projects = [
     code: "https://github.com/rprakashdass/portfolio",
     link: "https://portfolio.project.rprakashdass.in",
   },
-  {
-    id: 2,
-    title: "Toppings - Online Cooking Forum",
-    des: [
-      "Discover and share delicious recipes with a vibrant cooking community.",
-      "Join now and turn your kitchen into a culinary adventure!",
-    ],
-    img: "/projects/toppings.jpg",
-    live: "https://toppings.project.rprakashdass.in",
-    code: "https://github.com/rprakashdass/toppings",
-    link: "https://toppings.project.rprakashdass.in",
-  },
-  {
+   {
     id: 3,
     title: "Client Management System",
     des: [
@@ -130,8 +118,20 @@ export const projects = [
     code: "https://github.com/rprakashdass/client-management-system",
     link: "",
   },
+  // {
+  //   id: 2,
+  //   title: "Toppings - Online Cooking Forum",
+  //   des: [
+  //     "Discover and share delicious recipes with a vibrant cooking community.",
+  //     "Join now and turn your kitchen into a culinary adventure!",
+  //   ],
+  //   img: "/projects/toppings.jpg",
+  //   live: "https://toppings.project.rprakashdass.in",
+  //   code: "https://github.com/rprakashdass/toppings",
+  //   link: "https://toppings.project.rprakashdass.in",
+  // },
   {
-    id: 3,
+    id: 6,
     title: "Blood Management System",
     des: [
       "Connect blood donors and recipients effortlessly with RedConnect.",
