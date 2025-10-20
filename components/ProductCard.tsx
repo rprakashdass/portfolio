@@ -1,59 +1,61 @@
 "use client";
 
-import { FaLocationArrow } from "react-icons/fa6";
+import { FaCode } from "react-icons/fa6";
 import { products } from "@/data";
-import { PinContainer } from "./ui/PinContainer";
+import { motion } from "framer-motion";
 
 export const ProductCard = () => {
   return (
-    <div className="">
-      <h1 className="heading">
-          My {' '}
-        <span className="highlight-text"> 
-          Freelance {' '}
-        </span>Projects
-      </h1>
-      <div className="flex flex-wrap items-center justify-center md:gap-16">
-        {products.map((item, index) => (
-          <div
-            className="lg:min-h-[32.5rem] flex items-center justify-center sm:w-96 w-[80vw]"
-            key={item.id}
-          >
-            <PinContainer
-              title={item.link}
-              href={item.link}
+    <div>
+        <div className="text-center mb-8">
+          <h1 className="font-bold text-3xl md:text-4xl mb-4">
+            My {' '}
+            <span className="highlight-text"> 
+              Freelance {' '}
+            </span>
+            Projects
+          </h1>
+        </div>
+
+        {/* Projects Grid */}
+        <motion.div 
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+          layout
+        >
+          {products.map((item, index) => (
+            <motion.div
+              key={item.id}
+              layout
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 0.3, delay: index * 0.1 }}
+              className="bg-gray-900/80 backdrop-blur-sm border border-gray-800 rounded-2xl p-6 hover:border-gray-600 transition-all duration-300 group"
             >
-              <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
-                <div
-                  className="relative w-full h-full overflow-hidden lg:rounded-3xl border-gray-300"
-                >
-                </div>
-                <img
-                  src={item.img}
-                  alt="cover"
-                  className="z-10 absolute bottom-0"
-                />
-              </div>
-
-              <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
+              <h3 className="text-xl font-bold mb-4 text-white">
                 {item.title}
-              </h1>
-
-              <p
-                className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2"
-                style={{
-                  color: "#BEC1DD",
-                  margin: "1vh 0",
-                }}
-              >
+              </h3>
+              
+              <p className="text-gray-400 text-sm leading-relaxed mb-6">
                 {item.des}
               </p>
 
-            </PinContainer>
-          </div>
-        ))}
-      </div>
-    </div>
+              {/* Action Button */}
+              <div className="flex gap-3">
+                <a
+                  href={item.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 bg-gray-700 hover:bg-gray-600 text-white py-2 px-4 rounded-lg transition-colors font-medium text-sm"
+                >
+                  <FaCode className="text-sm" />
+                  View Project
+                </a>
+              </div>
+            </motion.div>
+          ))}
+        </motion.div>
+</div>
   );
 };
 

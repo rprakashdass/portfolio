@@ -1,4 +1,4 @@
-import Tutorials from '@/pages/Contributions/Tutorials/DevGuides'
+import Tutorials from '@/components/DevGuidesContributions'
 import React from 'react'
 
 const page: React.FC = () => {

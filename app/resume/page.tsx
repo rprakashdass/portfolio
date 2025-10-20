@@ -1,5 +1,4 @@
-import Tutorials from '@/pages/Contributions/Tutorials/DevGuides'
-import ResumePage from '@/pages/ResumePage/ResumePage'
+import ResumePage from '@/components/ResumePage'
 import React from 'react'
 
 const page: React.FC = () => {

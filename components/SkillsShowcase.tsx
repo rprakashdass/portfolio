@@ -1,7 +1,7 @@
 "use client";
 
 import React from 'react';
-import { skills } from '../data';
+import { skills } from '@/data';
 import { motion } from 'framer-motion';
 
 const Skills: React.FC = () => {
@@ -44,7 +44,7 @@ const Skills: React.FC = () => {
                     {skill.logo ? (
                       <img
                         src={skill.logo}
-                        alt={`${skill.name} logo`}
+                        alt={``}
                         className="w-full h-full object-contain"
                       />
                     ) : (

@@ -1,5 +1,5 @@
 import React from 'react';
-import { socialMedia } from '../data';
+import { socialMedia } from '@/data';
 
 const LinkTree = () => {
   return (

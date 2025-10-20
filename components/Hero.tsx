@@ -3,7 +3,7 @@ import { TextGenerateEffect } from './ui/TextGenerateEffect';
 import { MagicButton } from './ui/MagicButton';
 import { RiExternalLinkLine } from 'react-icons/ri';
 
-const words = `Crafting Smart Solutions and Reliable Systems`;
+const words = `Building Intelligent Systems with AI & Machine Learning`;
 
 const Hero = () => {
   return (
@@ -15,7 +15,7 @@ const Hero = () => {
 
       <div className="relative flex flex-col items-center justify-center max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] text-center space-y-6">
         <h2 className="text-sm lg:mt-10 tracking-widest uppercase">
-          Empowering Progress with AI/ML and Full Stack Expertise
+          AI Engineer • Machine Learning Specialist • Systems Developer
         </h2>
 
         <TextGenerateEffect

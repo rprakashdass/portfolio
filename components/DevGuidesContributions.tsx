@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react'
-import { tutorials } from '@/data'
-import ContributionsCardGenerator from '@/pages/Contributions/Tutorials/ContributionsCardGenerator'
+import { tutorials, type Tutorial } from '@/data'
+import ContributionsCardGenerator from './ContributionsCardGenerator'
 import React from 'react'
 import SeeMore from './utility/SeeMore'
 
@@ -11,9 +11,9 @@ export const DevGuidesContributions = () => {
             <SeeMore data={tutorials}>
 
                 {(
-                    ({ itemsData, showLessRef }: { itemsData: any, showLessRef: any }) => {
+                    ({ itemsData, showLessRef }: { itemsData: Tutorial[], showLessRef: React.RefObject<HTMLParagraphElement> }) => {
                         return (
-                            <div className="md:px-20">
+                            <div>
 
                                 <div className="py-10 text-center text-white">
                                     <h1 className="mb-8 font-extrabold text-5xl">
@@ -31,7 +31,7 @@ export const DevGuidesContributions = () => {
                                 <div
                                     className={`flex flex-col md:flex-row gap-10 justify-center transition-opacity duration-500'}`}
                                 >
-                                    {itemsData.map((item: any) => (
+                                    {itemsData.map((item: Tutorial) => (
                                         <ContributionsCardGenerator
                                             key={item.id}
                                             title={item.title}
